@@ -35,7 +35,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-/app/config/
+/app/config/db/
 
 /cache
 /cache/
