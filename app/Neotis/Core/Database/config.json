@@ -1,0 +1,46 @@
+{
+  "event": [
+    {
+      "name": "eloquent",
+      "status": "true",
+      "object": "Neotis\\Core\\Database\\Manager",
+      "method": "setEloquent",
+      "arguments": [],
+      "comment": "Define eloquent in event manager",
+      "position": "before::session"
+    }
+  ],
+  "cli_event": [
+    {
+      "name": "eloquent",
+      "status": "true",
+      "object": "Neotis\\Core\\Database\\Manager",
+      "method": "setEloquent",
+      "arguments": [],
+      "comment": "Define eloquent in event manager",
+      "position": "before::timeSettings"
+    }
+  ],
+  "watcher_event": [
+    {
+      "name": "eloquent",
+      "status": "true",
+      "object": "Neotis\\Core\\Database\\Manager",
+      "method": "setEloquent",
+      "arguments": [],
+      "comment": "Define eloquent in event manager",
+      "position": "before::timeSettings"
+    }
+  ],
+  "test_event": [
+    {
+      "name": "eloquent",
+      "status": "true",
+      "object": "Neotis\\Core\\Database\\Manager",
+      "method": "setEloquent",
+      "arguments": [],
+      "comment": "Define eloquent in event manager",
+      "position": "before::timeSettings"
+    }
+  ]
+}

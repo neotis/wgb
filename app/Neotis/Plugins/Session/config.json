@@ -1,0 +1,17 @@
+{
+  "event": {
+    "name": "sessionManager",
+    "status": "false",
+    "object": "Neotis\\Plugins\\Session\\Manager",
+    "method": "run",
+    "arguments": [],
+    "comment": "Define session class",
+    "position": "none",
+    "namespaces": [
+      {
+        "primary": "Neotis\\Core\\Session\\Adapter",
+        "replace": "Neotis\\Plugins\\Session\\Adapter"
+      }
+    ]
+  }
+}

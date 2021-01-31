@@ -1,0 +1,48 @@
+$blue: #9cffff;
+$purple: #5408d1;
+neo-component-processloader {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: none;
+  z-index: 100001;
+
+  &.active {
+    display: block;
+  }
+
+  .process {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 5px;
+
+    .load {
+      width: 50%;
+      height: 10px;
+      background-color: $blue;
+      line-height: 10px;
+      text-align: center;
+      color: #188787;
+      font-size: 10px;
+      font-weight: bold;
+
+      &.success {
+        background-color: #00BE8A;
+        color: white;
+      }
+
+      &.error {
+        background-color: #ff0074;
+        color: white;
+      }
+    }
+
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+  }
+}

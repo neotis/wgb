@@ -1,0 +1,11 @@
+{
+  "event": {
+    "name": "cookieManager",
+    "status": "true",
+    "object": "Neotis\\Plugins\\Cookie\\Adapter",
+    "method": "registerToDispatcher",
+    "arguments": [],
+    "comment": "Define cookie class",
+    "position": "replace::cookie"
+  }
+}

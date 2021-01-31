@@ -1,0 +1,15 @@
+neo-http-_401, neo-http-_402, neo-http-_403, neo-http-_404, neo-http-_500, neo-http-_502, neo-http-_503 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  height: 100%; }
+  neo-http-_401 h1, neo-http-_401 h2, neo-http-_401 h3, neo-http-_401 h4, neo-http-_401 h5, neo-http-_401 h6, neo-http-_402 h1, neo-http-_402 h2, neo-http-_402 h3, neo-http-_402 h4, neo-http-_402 h5, neo-http-_402 h6, neo-http-_403 h1, neo-http-_403 h2, neo-http-_403 h3, neo-http-_403 h4, neo-http-_403 h5, neo-http-_403 h6, neo-http-_404 h1, neo-http-_404 h2, neo-http-_404 h3, neo-http-_404 h4, neo-http-_404 h5, neo-http-_404 h6, neo-http-_500 h1, neo-http-_500 h2, neo-http-_500 h3, neo-http-_500 h4, neo-http-_500 h5, neo-http-_500 h6, neo-http-_502 h1, neo-http-_502 h2, neo-http-_502 h3, neo-http-_502 h4, neo-http-_502 h5, neo-http-_502 h6, neo-http-_503 h1, neo-http-_503 h2, neo-http-_503 h3, neo-http-_503 h4, neo-http-_503 h5, neo-http-_503 h6 {
+    padding: 10px; }
+  neo-http-_401 .center h1, neo-http-_401 .center h2, neo-http-_401 .center h3, neo-http-_401 .center h4, neo-http-_401 .center h5, neo-http-_401 .center h6, neo-http-_402 .center h1, neo-http-_402 .center h2, neo-http-_402 .center h3, neo-http-_402 .center h4, neo-http-_402 .center h5, neo-http-_402 .center h6, neo-http-_403 .center h1, neo-http-_403 .center h2, neo-http-_403 .center h3, neo-http-_403 .center h4, neo-http-_403 .center h5, neo-http-_403 .center h6, neo-http-_404 .center h1, neo-http-_404 .center h2, neo-http-_404 .center h3, neo-http-_404 .center h4, neo-http-_404 .center h5, neo-http-_404 .center h6, neo-http-_500 .center h1, neo-http-_500 .center h2, neo-http-_500 .center h3, neo-http-_500 .center h4, neo-http-_500 .center h5, neo-http-_500 .center h6, neo-http-_502 .center h1, neo-http-_502 .center h2, neo-http-_502 .center h3, neo-http-_502 .center h4, neo-http-_502 .center h5, neo-http-_502 .center h6, neo-http-_503 .center h1, neo-http-_503 .center h2, neo-http-_503 .center h3, neo-http-_503 .center h4, neo-http-_503 .center h5, neo-http-_503 .center h6 {
+    padding: 0; }
+  neo-http-_401 .center h1, neo-http-_402 .center h1, neo-http-_403 .center h1, neo-http-_404 .center h1, neo-http-_500 .center h1, neo-http-_502 .center h1, neo-http-_503 .center h1 {
+    font-size: 100px; }
+
+/*# sourceMappingURL=index.css.map */

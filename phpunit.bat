@@ -1,0 +1,1 @@
+app\dependencies\vendor\bin\phpunit

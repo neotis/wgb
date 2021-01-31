@@ -1,0 +1,1432 @@
+neo-component-material-text {
+  width: calc(100% - 20px);
+  position: relative;
+  display: inline-block;
+  margin: 10px; }
+  neo-component-material-text > .text-input-holder {
+    width: 100%;
+    box-sizing: border-box;
+    height: 50px;
+    min-height: 0 !important;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+    transition: ease-in 150ms;
+    border: 1px solid #E2E5EC; }
+    neo-component-material-text > .text-input-holder > span.prefix, neo-component-material-text > .text-input-holder span.postfix {
+      background-color: #E2E5EC;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      color: #545454;
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+      padding: 0 10px 0 10px; }
+      neo-component-material-text > .text-input-holder > span.prefix.icon, neo-component-material-text > .text-input-holder span.postfix.icon {
+        font-size: 18px; }
+    neo-component-material-text > .text-input-holder * {
+      box-sizing: border-box; }
+    neo-component-material-text > .text-input-holder > .title {
+      width: calc(100% - 20px);
+      height: 40px;
+      line-height: 40px;
+      font-size: 13px;
+      font-weight: bold;
+      color: #545454;
+      position: absolute;
+      z-index: 2;
+      right: 15px;
+      top: 10px;
+      cursor: text;
+      transition: ease-in 150ms; }
+    neo-component-material-text > .text-input-holder > span.status-icon {
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #545454; }
+      neo-component-material-text > .text-input-holder > span.status-icon > i {
+        display: none;
+        font-size: 22px; }
+        neo-component-material-text > .text-input-holder > span.status-icon > i.success {
+          color: #299781; }
+    neo-component-material-text > .text-input-holder > .inputs {
+      width: 100%;
+      height: inherit;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-content: center; }
+      neo-component-material-text > .text-input-holder > .inputs > label {
+        width: 100%;
+        font-size: 13px;
+        padding: 2px 10px 2px 10px;
+        font-weight: bold;
+        position: absolute;
+        top: calc(50% - 1em);
+        cursor: text;
+        transition: ease-in 150ms; }
+      neo-component-material-text > .text-input-holder > .inputs > input {
+        width: 100%;
+        font-size: 13px;
+        padding: 0 10px 0 10px;
+        box-sizing: border-box;
+        color: #545454;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        font-family: inherit;
+        transition: ease-in 150ms; }
+  neo-component-material-text.medium .text-input-holder {
+    width: calc(100% - 10px);
+    height: 40px;
+    margin: 5px; }
+    neo-component-material-text.medium .text-input-holder > .title {
+      width: calc(100% - 20px);
+      height: 30px;
+      line-height: 30px;
+      font-size: 11px;
+      z-index: 2; }
+    neo-component-material-text.medium .text-input-holder > span.status-icon {
+      width: 40px; }
+      neo-component-material-text.medium .text-input-holder > span.status-icon > i {
+        font-size: 18px; }
+    neo-component-material-text.medium .text-input-holder .inputs label {
+      font-size: 11px; }
+    neo-component-material-text.medium .text-input-holder .inputs > input {
+      font-size: 11px; }
+  neo-component-material-text.slim .text-input-holder {
+    width: calc(100% - 10px);
+    height: 40px;
+    margin: 5px; }
+    neo-component-material-text.slim .text-input-holder > .title {
+      width: calc(100% - 20px);
+      height: 30px;
+      line-height: 30px;
+      font-size: 11px;
+      z-index: 2; }
+    neo-component-material-text.slim .text-input-holder > span.status-icon {
+      width: 40px; }
+      neo-component-material-text.slim .text-input-holder > span.status-icon > i {
+        font-size: 18px; }
+    neo-component-material-text.slim .text-input-holder .inputs label {
+      display: none;
+      font-size: 11px; }
+    neo-component-material-text.slim .text-input-holder .inputs > input {
+      height: inherit;
+      font-size: 11px; }
+  neo-component-material-text.slim .text-input-holder {
+    height: 40px; }
+  neo-component-material-text.bg-grey .text-input-holder, neo-component-material-text.disabled .text-input-holder {
+    background-color: #F8F8F8; }
+  neo-component-material-text.disabled .text-input-holder input {
+    cursor: no-drop; }
+  neo-component-material-text.active .text-input-holder > .title {
+    height: 20px;
+    top: -2px; }
+  neo-component-material-text.active .text-input-holder .inputs input {
+    position: absolute;
+    height: 20px;
+    bottom: 5px; }
+  neo-component-material-text.active.medium .text-input-holder > .title {
+    top: 2px; }
+  neo-component-material-text.active.medium .text-input-holder .inputs label {
+    top: 0; }
+  neo-component-material-text.active.medium .text-input-holder .inputs input {
+    bottom: 2px; }
+  neo-component-material-text.active.slim .text-input-holder .inputs input {
+    bottom: 0; }
+  neo-component-material-text.focus .text-input-holder {
+    border: 1px solid #7218D8; }
+    neo-component-material-text.focus .text-input-holder > .title {
+      height: 20px;
+      top: -2px;
+      color: #7218D8; }
+    neo-component-material-text.focus .text-input-holder span.prefix, neo-component-material-text.focus .text-input-holder span.postfix {
+      background-color: #7218D8;
+      color: white; }
+    neo-component-material-text.focus .text-input-holder .inputs label {
+      top: 2px;
+      color: #7218D8; }
+    neo-component-material-text.focus .text-input-holder .inputs input {
+      position: absolute;
+      height: 20px;
+      bottom: 5px; }
+  neo-component-material-text.focus.medium .text-input-holder > .title {
+    top: 2px; }
+  neo-component-material-text.focus.medium .text-input-holder .inputs label {
+    top: 0; }
+  neo-component-material-text.focus.medium .text-input-holder .inputs input {
+    bottom: 2px; }
+  neo-component-material-text.focus.slim .text-input-holder .inputs input {
+    height: inherit;
+    bottom: 0;
+    font-size: 13px;
+    color: #545454; }
+  neo-component-material-text.error .text-input-holder {
+    border: 1px solid #ff2f95; }
+    neo-component-material-text.error .text-input-holder > .title {
+      height: 20px;
+      top: -2px;
+      color: #ff2f95; }
+    neo-component-material-text.error .text-input-holder input {
+      position: absolute;
+      height: 20px;
+      bottom: 5px; }
+  neo-component-material-text.circle .text-input-holder {
+    border-radius: 25px;
+    overflow: hidden; }
+    neo-component-material-text.circle .text-input-holder > .title {
+      width: calc(100% - 25px);
+      right: 25px; }
+    neo-component-material-text.circle .text-input-holder .inputs label {
+      padding-right: 20px; }
+    neo-component-material-text.circle .text-input-holder .inputs input {
+      width: calc(100% - 10px);
+      position: absolute;
+      height: 20px;
+      bottom: 5px;
+      right: 10px; }
+  neo-component-material-text.circle.slim .text-input-holder .inputs input {
+    height: inherit;
+    bottom: 0;
+    right: 10px; }
+  neo-component-material-text.curve .text-input-holder {
+    border-radius: 5px;
+    overflow: hidden; }
+    neo-component-material-text.curve .text-input-holder input {
+      width: calc(100% - 10px);
+      position: absolute;
+      height: 20px;
+      bottom: 5px;
+      right: 0; }
+  neo-component-material-text.curve.slim .text-input-holder .inputs input {
+    height: inherit;
+    bottom: 0; }
+  neo-component-material-text.curve span.prefix, neo-component-material-text.curve span.postfix {
+    background-color: #299781;
+    color: white; }
+  neo-component-material-text.success .text-input-holder {
+    border: 1px solid #299781; }
+    neo-component-material-text.success .text-input-holder > .title {
+      height: 20px;
+      top: -2px;
+      color: #299781; }
+    neo-component-material-text.success .text-input-holder input {
+      position: absolute;
+      height: 20px;
+      bottom: 5px; }
+    neo-component-material-text.success .text-input-holder .status-icon i.success {
+      display: block; }
+  neo-component-material-text.shadow .text-input-holder {
+    -webkit-box-shadow: 0px 3px 20px 0px rgba(113, 106, 202, 0.11);
+    box-shadow: 0px 3px 20px 0px rgba(113, 106, 202, 0.11); }
+  neo-component-material-text.prefix-transparent span.prefix, neo-component-material-text.prefix-transparent span.postfix {
+    background-color: transparent;
+    color: #545454; }
+  neo-component-material-text.prefix-transparent.focus span.prefix, neo-component-material-text.prefix-transparent.focus span.postfix {
+    background-color: transparent;
+    color: #545454; }
+  neo-component-material-text.prefix-transparent.active span.prefix, neo-component-material-text.prefix-transparent.active span.postfix {
+    background-color: transparent;
+    color: #545454; }
+
+neo-component-material-select {
+  width: calc(100% - 20px);
+  position: relative;
+  display: inline-block;
+  outline: none;
+  margin: 10px; }
+  neo-component-material-select .list {
+    display: none;
+    width: 100%;
+    height: 290px;
+    position: absolute;
+    top: 50px;
+    z-index: 9000;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(69, 65, 78, 0.2);
+    box-shadow: 0px 0px 15px 1px rgba(69, 65, 78, 0.2); }
+    neo-component-material-select .list > .search-holder {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box; }
+      neo-component-material-select .list > .search-holder input {
+        width: 100%;
+        height: 30px;
+        font-family: "IRANSans";
+        box-sizing: border-box;
+        font-size: 11px;
+        border: 1px solid #E2E5EC;
+        padding-right: 10px; }
+        neo-component-material-select .list > .search-holder input:focus {
+          border-color: #7218D8;
+          outline: none; }
+    neo-component-material-select .list ul {
+      width: 100%;
+      height: 230px;
+      margin-top: 10px;
+      overflow-x: hidden;
+      box-sizing: border-box;
+      outline: none; }
+      neo-component-material-select .list ul > p {
+        font-size: 12px;
+        color: #E2E5EC;
+        padding-top: 10px; }
+      neo-component-material-select .list ul li {
+        width: 100%;
+        height: 40px;
+        cursor: pointer;
+        font-size: 12px;
+        padding-right: 5px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        outline: none; }
+        neo-component-material-select .list ul li .prefix {
+          display: none;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          font-size: 20px;
+          color: #545454; }
+        neo-component-material-select .list ul li p {
+          width: 100%; }
+        neo-component-material-select .list ul li .postfix {
+          width: 40px;
+          height: 100%;
+          display: none;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          font-size: 20px;
+          color: #545454; }
+        neo-component-material-select .list ul li:hover {
+          background-color: #F8F8F8; }
+        neo-component-material-select .list ul li:focus {
+          background-color: #F8F8F8; }
+        neo-component-material-select .list ul li.focus {
+          background-color: #F8F8F8; }
+        neo-component-material-select .list ul li.active {
+          background-color: #E2E5EC; }
+          neo-component-material-select .list ul li.active .postfix {
+            display: flex; }
+  neo-component-material-select .text-input-holder {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    transition: ease-in 150ms;
+    border: 1px solid #E2E5EC; }
+    neo-component-material-select .text-input-holder > span.prefix, neo-component-material-select .text-input-holder span.postfix {
+      background-color: #E2E5EC;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      color: #545454;
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+      padding: 0 10px 0 10px; }
+      neo-component-material-select .text-input-holder > span.prefix.icon, neo-component-material-select .text-input-holder span.postfix.icon {
+        font-size: 18px; }
+    neo-component-material-select .text-input-holder * {
+      box-sizing: border-box; }
+    neo-component-material-select .text-input-holder > .title {
+      width: calc(100% - 20px);
+      height: 40px;
+      line-height: 40px;
+      font-size: 13px;
+      font-weight: bold;
+      color: #545454;
+      position: absolute;
+      z-index: 2;
+      right: 15px;
+      top: 10px;
+      cursor: text;
+      transition: ease-in 150ms; }
+    neo-component-material-select .text-input-holder > span.status-icon {
+      width: 40px;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      color: #545454; }
+      neo-component-material-select .text-input-holder > span.status-icon > i {
+        display: none;
+        font-size: 22px; }
+        neo-component-material-select .text-input-holder > span.status-icon > i.success {
+          color: #299781; }
+      neo-component-material-select .text-input-holder > span.status-icon.active {
+        display: flex; }
+    neo-component-material-select .text-input-holder > .inputs {
+      width: 100%;
+      height: inherit;
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      align-content: center; }
+      neo-component-material-select .text-input-holder > .inputs > label {
+        width: 100%;
+        height: inherit;
+        font-size: 13px;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        padding: 2px 10px 2px 10px;
+        font-weight: bold;
+        position: absolute;
+        cursor: text;
+        transition: ease-in 150ms; }
+      neo-component-material-select .text-input-holder > .inputs > select {
+        width: 1px;
+        height: 1px;
+        font-size: 0;
+        overflow: hidden;
+        outline: none;
+        border: none; }
+      neo-component-material-select .text-input-holder > .inputs > span {
+        width: 40px;
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        color: #545454; }
+  neo-component-material-select.medium .text-input-holder {
+    width: calc(100% - 10px);
+    height: 40px;
+    margin: 5px; }
+    neo-component-material-select.medium .text-input-holder > .title {
+      width: calc(100% - 20px);
+      height: 30px;
+      line-height: 30px;
+      font-size: 11px;
+      z-index: 2; }
+    neo-component-material-select.medium .text-input-holder > span.status-icon {
+      width: 40px; }
+      neo-component-material-select.medium .text-input-holder > span.status-icon > i {
+        font-size: 18px; }
+    neo-component-material-select.medium .text-input-holder .inputs label {
+      font-size: 11px; }
+    neo-component-material-select.medium .text-input-holder .inputs > input {
+      font-size: 11px; }
+  neo-component-material-select.slim .text-input-holder {
+    width: calc(100% - 10px);
+    height: 40px;
+    margin: 5px; }
+    neo-component-material-select.slim .text-input-holder > .title {
+      width: calc(100% - 20px);
+      height: 30px;
+      line-height: 30px;
+      font-size: 11px;
+      z-index: 2; }
+    neo-component-material-select.slim .text-input-holder > span.status-icon {
+      width: 40px; }
+      neo-component-material-select.slim .text-input-holder > span.status-icon > i {
+        font-size: 18px; }
+    neo-component-material-select.slim .text-input-holder .inputs label {
+      display: none;
+      font-size: 11px; }
+    neo-component-material-select.slim .text-input-holder .inputs > input {
+      height: inherit;
+      font-size: 11px; }
+  neo-component-material-select.slim .text-input-holder {
+    height: 40px; }
+  neo-component-material-select.bg-grey .text-input-holder, neo-component-material-select.disabled .text-input-holder {
+    background-color: #F8F8F8; }
+  neo-component-material-select.disabled .text-input-holder input {
+    cursor: no-drop; }
+  neo-component-material-select.active .text-input-holder > .title {
+    height: 20px;
+    top: -2px; }
+  neo-component-material-select.active .text-input-holder .inputs input {
+    position: absolute;
+    height: 20px;
+    bottom: 5px; }
+  neo-component-material-select.active.medium .text-input-holder > .title {
+    top: 2px; }
+  neo-component-material-select.active.medium .text-input-holder .inputs label {
+    top: 0; }
+  neo-component-material-select.active.medium .text-input-holder .inputs input {
+    bottom: 2px; }
+  neo-component-material-select.active.slim .text-input-holder .inputs input {
+    bottom: 0; }
+  neo-component-material-select.focus .text-input-holder {
+    border: 1px solid #7218D8; }
+    neo-component-material-select.focus .text-input-holder > .title {
+      height: 20px;
+      top: -2px;
+      color: #7218D8; }
+    neo-component-material-select.focus .text-input-holder span.prefix, neo-component-material-select.focus .text-input-holder span.postfix {
+      background-color: #7218D8;
+      color: white; }
+    neo-component-material-select.focus .text-input-holder .inputs label {
+      top: 2px;
+      color: #7218D8; }
+    neo-component-material-select.focus .text-input-holder .inputs input {
+      position: absolute;
+      height: 20px;
+      bottom: 5px; }
+  neo-component-material-select.focus.medium .text-input-holder > .title {
+    top: 2px; }
+  neo-component-material-select.focus.medium .text-input-holder .inputs label {
+    top: 0; }
+  neo-component-material-select.focus.medium .text-input-holder .inputs input {
+    bottom: 2px; }
+  neo-component-material-select.focus.slim .text-input-holder .inputs input {
+    height: inherit;
+    bottom: 0;
+    font-size: 13px;
+    color: #545454; }
+  neo-component-material-select.error .text-input-holder {
+    border: 1px solid #ff2f95; }
+    neo-component-material-select.error .text-input-holder > .title {
+      height: 20px;
+      top: -2px;
+      color: #ff2f95; }
+    neo-component-material-select.error .text-input-holder input {
+      position: absolute;
+      height: 20px;
+      bottom: 5px; }
+  neo-component-material-select.circle .text-input-holder {
+    border-radius: 25px;
+    overflow: hidden; }
+    neo-component-material-select.circle .text-input-holder > .title {
+      width: calc(100% - 25px);
+      right: 25px; }
+    neo-component-material-select.circle .text-input-holder .inputs label {
+      padding-right: 20px; }
+    neo-component-material-select.circle .text-input-holder .inputs input {
+      width: calc(100% - 10px);
+      position: absolute;
+      height: 20px;
+      bottom: 5px;
+      right: 10px; }
+  neo-component-material-select.circle.slim .text-input-holder .inputs input {
+    height: inherit;
+    bottom: 0;
+    right: 10px; }
+  neo-component-material-select.curve .text-input-holder {
+    border-radius: 5px;
+    overflow: hidden; }
+    neo-component-material-select.curve .text-input-holder input {
+      width: calc(100% - 10px);
+      position: absolute;
+      height: 20px;
+      bottom: 5px;
+      right: 0; }
+  neo-component-material-select.curve.slim .text-input-holder .inputs input {
+    height: inherit;
+    bottom: 0; }
+  neo-component-material-select.curve span.prefix, neo-component-material-select.curve span.postfix {
+    background-color: #299781;
+    color: white; }
+  neo-component-material-select.success .text-input-holder {
+    border: 1px solid #299781; }
+    neo-component-material-select.success .text-input-holder > .title {
+      height: 20px;
+      top: -2px;
+      color: #299781; }
+    neo-component-material-select.success .text-input-holder input {
+      position: absolute;
+      height: 20px;
+      bottom: 5px; }
+    neo-component-material-select.success .text-input-holder .status-icon {
+      display: flex; }
+      neo-component-material-select.success .text-input-holder .status-icon i.success {
+        display: block; }
+    neo-component-material-select.success .text-input-holder span.prefix, neo-component-material-select.success .text-input-holder span.postfix {
+      background-color: #299781;
+      color: white; }
+  neo-component-material-select.shadow .text-input-holder {
+    -webkit-box-shadow: 0px 3px 20px 0px rgba(113, 106, 202, 0.11);
+    box-shadow: 0px 3px 20px 0px rgba(113, 106, 202, 0.11); }
+  neo-component-material-select.prefix-transparent span.prefix, neo-component-material-select.prefix-transparent span.postfix {
+    background-color: transparent;
+    color: #545454; }
+  neo-component-material-select.prefix-transparent.focus span.prefix, neo-component-material-select.prefix-transparent.focus span.postfix {
+    background-color: transparent;
+    color: #545454; }
+  neo-component-material-select.prefix-transparent.active span.prefix, neo-component-material-select.prefix-transparent.active span.postfix {
+    background-color: transparent;
+    color: #545454; }
+
+neo-component-material-checkbox {
+  width: calc(100% - 20px);
+  outline: none;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  margin: 10px; }
+  neo-component-material-checkbox > label {
+    display: inline-block;
+    position: relative;
+    padding-right: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    box-sizing: border-box; }
+    neo-component-material-checkbox > label input {
+      width: 100%;
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit; }
+    neo-component-material-checkbox > label span {
+      -webkit-box-shadow: 0px 3px 20px 0px rgba(113, 106, 202, 0.11);
+      box-shadow: 0px 3px 20px 0px rgba(113, 106, 202, 0.11);
+      border: 1px solid #E2E5EC;
+      background: none;
+      position: absolute;
+      box-sizing: border-box;
+      top: 1px;
+      right: 0;
+      height: 18px;
+      width: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      font-size: 14px;
+      color: #299781; }
+  neo-component-material-checkbox.curve > label span {
+    border-radius: 3px; }
+  neo-component-material-checkbox.fill > label span {
+    background-color: #E2E5EC; }
+  neo-component-material-checkbox.fill.red > label span {
+    background-color: #ff2f95;
+    border-color: #ff2f95;
+    color: white; }
+  neo-component-material-checkbox.fill.green > label span {
+    background-color: #299781;
+    border-color: #299781;
+    color: white; }
+  neo-component-material-checkbox.fill.basic > label span {
+    background-color: #0FABEF;
+    border-color: #0FABEF;
+    color: white; }
+  neo-component-material-checkbox.fill.primary > label span {
+    background-color: #7218D8;
+    border-color: #7218D8;
+    color: white; }
+  neo-component-material-checkbox.fill.disable > label span {
+    background-color: #E2E5EC;
+    border-color: #E2E5EC;
+    color: white;
+    cursor: no-drop; }
+  neo-component-material-checkbox.green > label span {
+    border-color: #299781;
+    color: #299781; }
+  neo-component-material-checkbox.red > label span {
+    border-color: #ff2f95;
+    color: #ff2f95; }
+  neo-component-material-checkbox.primary > label span {
+    border-color: #7218D8;
+    color: #7218D8; }
+  neo-component-material-checkbox.basic > label span {
+    border-color: #0FABEF;
+    color: #0FABEF; }
+  neo-component-material-checkbox.disable > label span {
+    background-color: #E2E5EC;
+    border-color: #E2E5EC;
+    color: white;
+    cursor: no-drop; }
+  neo-component-material-checkbox.active > label {
+    font-size: 13px; }
+    neo-component-material-checkbox.active > label > span {
+      width: 20px;
+      height: 20px;
+      border-width: 2px; }
+
+neo-component-material-radio {
+  width: calc(100% - 20px);
+  outline: none;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  margin: 10px; }
+  neo-component-material-radio > label {
+    display: inline-block;
+    position: relative;
+    padding-right: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    box-sizing: border-box; }
+    neo-component-material-radio > label input {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit; }
+    neo-component-material-radio > label > span {
+      -webkit-box-shadow: 0px 3px 20px 0px rgba(113, 106, 202, 0.11);
+      box-shadow: 0px 3px 20px 0px rgba(113, 106, 202, 0.11);
+      border: 1px solid #E2E5EC;
+      box-sizing: border-box;
+      border-radius: 50%;
+      background: none;
+      position: absolute;
+      top: 1px;
+      right: 0;
+      height: 20px;
+      width: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      font-size: 14px;
+      color: #299781; }
+      neo-component-material-radio > label > span > .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #545454; }
+  neo-component-material-radio.curve > label span {
+    border-radius: 3px; }
+  neo-component-material-radio.fill > label span {
+    background-color: #E2E5EC; }
+  neo-component-material-radio.fill.red > label span {
+    background-color: #ff2f95;
+    border-color: #ff2f95; }
+    neo-component-material-radio.fill.red > label span > .dot {
+      background-color: white; }
+  neo-component-material-radio.fill.green > label span {
+    background-color: #299781;
+    border-color: #299781; }
+    neo-component-material-radio.fill.green > label span > .dot {
+      background-color: white; }
+  neo-component-material-radio.fill.basic > label span {
+    background-color: #0FABEF;
+    border-color: #0FABEF; }
+    neo-component-material-radio.fill.basic > label span > .dot {
+      background-color: white; }
+  neo-component-material-radio.fill.primary > label span {
+    background-color: #7218D8;
+    border-color: #7218D8; }
+    neo-component-material-radio.fill.primary > label span > .dot {
+      background-color: white; }
+  neo-component-material-radio.green > label span {
+    border-color: #299781; }
+    neo-component-material-radio.green > label span > .dot {
+      background-color: #299781; }
+  neo-component-material-radio.red > label span {
+    border-color: #ff2f95; }
+    neo-component-material-radio.red > label span > .dot {
+      background-color: #ff2f95; }
+  neo-component-material-radio.primary > label span {
+    border-color: #7218D8; }
+    neo-component-material-radio.primary > label span > .dot {
+      background-color: #7218D8; }
+  neo-component-material-radio.basic > label span {
+    border-color: #0FABEF; }
+    neo-component-material-radio.basic > label span > .dot {
+      background-color: #0FABEF; }
+  neo-component-material-radio.disable > label span {
+    background-color: #E2E5EC;
+    border-color: #E2E5EC;
+    cursor: no-drop; }
+    neo-component-material-radio.disable > label span > .dot {
+      background-color: #0FABEF; }
+  neo-component-material-radio.active > label > span {
+    border-width: 2px; }
+
+neo-component-material-tinymce {
+  display: inline-block;
+  width: calc(100% - 20px);
+  margin: 10px; }
+
+neo-component-material-tag {
+  width: calc(100% - 20px);
+  position: relative;
+  display: inline-block;
+  margin: 10px; }
+  neo-component-material-tag > .tag-input-holder {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 50px;
+    height: auto;
+    position: relative;
+    transition: ease-in 150ms;
+    border: 1px solid #E2E5EC; }
+    neo-component-material-tag > .tag-input-holder .tag-list {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      flex-wrap: wrap;
+      list-style: none; }
+      neo-component-material-tag > .tag-input-holder .tag-list li {
+        padding: 4px 12px 4px 12px;
+        background-color: #E2E5EC;
+        color: #545454;
+        border-radius: 15px;
+        font-size: 12px;
+        margin: 6px 2px 6px 2px;
+        display: flex;
+        justify-content: space-between; }
+        neo-component-material-tag > .tag-input-holder .tag-list li i {
+          font-size: 10px;
+          cursor: pointer;
+          margin: 5px; }
+        neo-component-material-tag > .tag-input-holder .tag-list li input {
+          width: 100px;
+          border: none;
+          outline: none;
+          border-inline: none;
+          font-family: 'IRANSans';
+          font-size: 11px; }
+        neo-component-material-tag > .tag-input-holder .tag-list li:last-child {
+          background-color: transparent; }
+    neo-component-material-tag > .tag-input-holder > span.prefix, neo-component-material-tag > .tag-input-holder span.postfix {
+      background-color: #E2E5EC;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      color: #545454;
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+      padding: 0 10px 0 10px; }
+      neo-component-material-tag > .tag-input-holder > span.prefix.icon, neo-component-material-tag > .tag-input-holder span.postfix.icon {
+        font-size: 18px; }
+    neo-component-material-tag > .tag-input-holder * {
+      box-sizing: border-box; }
+    neo-component-material-tag > .tag-input-holder > .title {
+      width: calc(100% - 20px);
+      height: 40px;
+      line-height: 40px;
+      font-size: 13px;
+      font-weight: bold;
+      color: #545454;
+      position: absolute;
+      z-index: 2;
+      right: 15px;
+      top: 10px;
+      cursor: text;
+      transition: ease-in 150ms; }
+    neo-component-material-tag > .tag-input-holder > span.status-icon {
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #545454; }
+      neo-component-material-tag > .tag-input-holder > span.status-icon > i {
+        display: none;
+        font-size: 22px; }
+        neo-component-material-tag > .tag-input-holder > span.status-icon > i.success {
+          color: #299781; }
+    neo-component-material-tag > .tag-input-holder > .inputs {
+      width: 100%;
+      height: inherit;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-content: center; }
+      neo-component-material-tag > .tag-input-holder > .inputs > label {
+        width: 100%;
+        font-size: 13px;
+        padding: 2px 10px 2px 10px;
+        font-weight: bold;
+        position: absolute;
+        top: calc(50% - 1em);
+        cursor: text;
+        transition: ease-in 150ms; }
+      neo-component-material-tag > .tag-input-holder > .inputs > input {
+        width: 100%;
+        font-size: 13px;
+        padding: 0 10px 0 10px;
+        box-sizing: border-box;
+        color: #545454;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        font-family: inherit;
+        transition: ease-in 150ms; }
+  neo-component-material-tag.medium .tag-input-holder {
+    width: calc(100% - 10px);
+    min-height: 40px;
+    margin: 5px; }
+    neo-component-material-tag.medium .tag-input-holder > .title {
+      width: calc(100% - 20px);
+      min-height: 30px;
+      line-height: 30px;
+      font-size: 11px;
+      z-index: 2; }
+    neo-component-material-tag.medium .tag-input-holder > span.status-icon {
+      width: 40px; }
+      neo-component-material-tag.medium .tag-input-holder > span.status-icon > i {
+        font-size: 18px; }
+    neo-component-material-tag.medium .tag-input-holder .inputs label {
+      font-size: 11px; }
+    neo-component-material-tag.medium .tag-input-holder .inputs > input {
+      font-size: 11px; }
+  neo-component-material-tag.slim .tag-input-holder {
+    width: calc(100% - 10px);
+    height: 40px;
+    margin: 5px; }
+    neo-component-material-tag.slim .tag-input-holder > .title {
+      width: calc(100% - 20px);
+      min-height: 30px;
+      line-height: 30px;
+      font-size: 11px;
+      z-index: 2; }
+    neo-component-material-tag.slim .tag-input-holder > span.status-icon {
+      width: 40px; }
+      neo-component-material-tag.slim .tag-input-holder > span.status-icon > i {
+        font-size: 18px; }
+    neo-component-material-tag.slim .tag-input-holder .inputs label {
+      display: none;
+      font-size: 11px; }
+    neo-component-material-tag.slim .tag-input-holder .inputs > input {
+      height: inherit;
+      font-size: 11px; }
+  neo-component-material-tag.slim .tag-input-holder {
+    height: 40px; }
+  neo-component-material-tag.bg-grey .tag-input-holder, neo-component-material-tag.disabled .tag-input-holder {
+    background-color: #F8F8F8; }
+  neo-component-material-tag.disabled .tag-input-holder input {
+    cursor: no-drop; }
+  neo-component-material-tag.active .tag-input-holder > .title {
+    height: 20px;
+    top: -2px; }
+  neo-component-material-tag.active .tag-input-holder .inputs input {
+    position: absolute;
+    height: 20px;
+    bottom: 5px; }
+  neo-component-material-tag.active.medium .tag-input-holder > .title {
+    top: 2px; }
+  neo-component-material-tag.active.medium .tag-input-holder .inputs label {
+    top: 0; }
+  neo-component-material-tag.active.medium .tag-input-holder .inputs input {
+    bottom: 2px; }
+  neo-component-material-tag.active.slim .tag-input-holder .inputs input {
+    bottom: 0; }
+  neo-component-material-tag.focus .tag-input-holder {
+    border: 1px solid #7218D8; }
+    neo-component-material-tag.focus .tag-input-holder > .title {
+      height: 20px;
+      top: -2px;
+      color: #7218D8; }
+    neo-component-material-tag.focus .tag-input-holder span.prefix, neo-component-material-tag.focus .tag-input-holder span.postfix {
+      background-color: #7218D8;
+      color: white; }
+    neo-component-material-tag.focus .tag-input-holder .inputs label {
+      top: 2px;
+      color: #7218D8; }
+    neo-component-material-tag.focus .tag-input-holder .inputs input {
+      position: absolute;
+      height: 20px;
+      bottom: 5px; }
+  neo-component-material-tag.focus.medium .tag-input-holder > .title {
+    top: 2px; }
+  neo-component-material-tag.focus.medium .tag-input-holder .inputs label {
+    top: 0; }
+  neo-component-material-tag.focus.medium .tag-input-holder .inputs input {
+    bottom: 2px; }
+  neo-component-material-tag.focus.slim .tag-input-holder .inputs input {
+    height: inherit;
+    bottom: 0;
+    font-size: 13px;
+    color: #545454; }
+  neo-component-material-tag.error .tag-input-holder {
+    border: 1px solid #ff2f95; }
+    neo-component-material-tag.error .tag-input-holder > .title {
+      height: 20px;
+      top: -2px;
+      color: #ff2f95; }
+    neo-component-material-tag.error .tag-input-holder input {
+      position: absolute;
+      height: 20px;
+      bottom: 5px; }
+  neo-component-material-tag.circle .tag-input-holder {
+    border-radius: 25px;
+    overflow: hidden; }
+    neo-component-material-tag.circle .tag-input-holder > .title {
+      width: calc(100% - 25px);
+      right: 25px; }
+    neo-component-material-tag.circle .tag-input-holder .inputs label {
+      padding-right: 20px; }
+    neo-component-material-tag.circle .tag-input-holder .inputs input {
+      width: calc(100% - 10px);
+      position: absolute;
+      height: 20px;
+      bottom: 5px;
+      right: 10px; }
+  neo-component-material-tag.circle.slim .tag-input-holder .inputs input {
+    height: inherit;
+    bottom: 0;
+    right: 10px; }
+  neo-component-material-tag.curve .tag-input-holder {
+    border-radius: 5px;
+    overflow: hidden; }
+    neo-component-material-tag.curve .tag-input-holder input {
+      width: calc(100% - 10px);
+      position: absolute;
+      height: 20px;
+      bottom: 5px;
+      right: 0; }
+  neo-component-material-tag.curve.slim .tag-input-holder .inputs input {
+    height: inherit;
+    bottom: 0; }
+  neo-component-material-tag.curve span.prefix, neo-component-material-tag.curve span.postfix {
+    background-color: #299781;
+    color: white; }
+  neo-component-material-tag.success .tag-input-holder {
+    border: 1px solid #299781; }
+    neo-component-material-tag.success .tag-input-holder > .title {
+      height: 20px;
+      top: -2px;
+      color: #299781; }
+    neo-component-material-tag.success .tag-input-holder input {
+      position: absolute;
+      height: 20px;
+      bottom: 5px; }
+    neo-component-material-tag.success .tag-input-holder .status-icon i.success {
+      display: block; }
+  neo-component-material-tag.shadow .tag-input-holder {
+    -webkit-box-shadow: 0px 3px 20px 0px rgba(113, 106, 202, 0.11);
+    box-shadow: 0px 3px 20px 0px rgba(113, 106, 202, 0.11); }
+  neo-component-material-tag.prefix-transparent span.prefix, neo-component-material-tag.prefix-transparent span.postfix {
+    background-color: transparent;
+    color: #545454; }
+  neo-component-material-tag.prefix-transparent.focus span.prefix, neo-component-material-tag.prefix-transparent.focus span.postfix {
+    background-color: transparent;
+    color: #545454; }
+  neo-component-material-tag.prefix-transparent.active span.prefix, neo-component-material-tag.prefix-transparent.active span.postfix {
+    background-color: transparent;
+    color: #545454; }
+
+neo-component-material-range {
+  direction: ltr;
+  font-size: 12px;
+  /*! nouislider - 14.2.0 - 3/27/2020 */ }
+  neo-component-material-range > .range-holder {
+    width: calc(100% - 30px);
+    height: 40px;
+    position: relative; }
+    neo-component-material-range > .range-holder > div {
+      width: inherit; }
+  neo-component-material-range .noUi-target, neo-component-material-range .noUi-target * {
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -ms-touch-action: none;
+    touch-action: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  neo-component-material-range .noUi-target {
+    position: relative; }
+  neo-component-material-range .noUi-base, neo-component-material-range .noUi-connects {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1; }
+  neo-component-material-range .noUi-connects {
+    overflow: hidden;
+    z-index: 0; }
+  neo-component-material-range .noUi-connect, neo-component-material-range .noUi-origin {
+    will-change: transform;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    -ms-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    -webkit-transform-style: preserve-3d;
+    transform-origin: 0 0;
+    transform-style: flat; }
+  neo-component-material-range .noUi-connect {
+    height: 100%;
+    width: 100%; }
+  neo-component-material-range .noUi-origin {
+    height: 10%;
+    width: 10%; }
+  neo-component-material-range .noUi-txt-dir-rtl.noUi-horizontal .noUi-origin {
+    left: 0;
+    right: auto; }
+  neo-component-material-range .noUi-vertical .noUi-origin {
+    width: 0; }
+  neo-component-material-range .noUi-horizontal .noUi-origin {
+    height: 0; }
+  neo-component-material-range .noUi-handle {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute; }
+  neo-component-material-range .noUi-touch-area {
+    height: 100%;
+    width: 100%; }
+  neo-component-material-range .noUi-state-tap .noUi-connect, neo-component-material-range .noUi-state-tap .noUi-origin {
+    -webkit-transition: transform .3s;
+    transition: transform 0.3s; }
+  neo-component-material-range .noUi-state-drag * {
+    cursor: inherit !important; }
+  neo-component-material-range .noUi-horizontal {
+    height: 12px; }
+  neo-component-material-range .noUi-horizontal .noUi-handle {
+    width: 24px;
+    height: 24px;
+    right: -17px;
+    top: -6px;
+    border-radius: 50%;
+    outline: none;
+    background-color: white;
+    border: 1px solid #dfe2ea;
+    -webkit-box-shadow: 0 3px 6px -3px #9ea7c0;
+    box-shadow: 0 3px 6px -3px #9ea7c0; }
+  neo-component-material-range .noUi-vertical {
+    width: 18px; }
+  neo-component-material-range .noUi-vertical .noUi-handle {
+    width: 28px;
+    height: 34px;
+    right: -6px;
+    top: -17px; }
+  neo-component-material-range .noUi-txt-dir-rtl.noUi-horizontal .noUi-handle {
+    left: -17px;
+    right: auto; }
+  neo-component-material-range .noUi-target {
+    background: #FAFAFA;
+    border-radius: 4px;
+    border: 1px solid #D3D3D3;
+    box-shadow: inset 0 1px 1px #F0F0F0, 0 3px 6px -5px #BBB; }
+  neo-component-material-range .noUi-connects {
+    border-radius: 3px; }
+  neo-component-material-range .noUi-connect {
+    background: #7218D8; }
+  neo-component-material-range .noUi-draggable {
+    cursor: ew-resize; }
+  neo-component-material-range .noUi-vertical .noUi-draggable {
+    cursor: ns-resize; }
+  neo-component-material-range .noUi-active {
+    box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #DDD, 0 3px 6px -3px #BBB; }
+  neo-component-material-range .noUi-vertical .noUi-handle:after, neo-component-material-range .noUi-vertical .noUi-handle:before {
+    width: 14px;
+    height: 1px;
+    left: 6px;
+    top: 14px; }
+  neo-component-material-range .noUi-vertical .noUi-handle:after {
+    top: 17px; }
+  neo-component-material-range [disabled] .noUi-connect {
+    background: #B8B8B8; }
+  neo-component-material-range [disabled] .noUi-handle, neo-component-material-range [disabled].noUi-handle, neo-component-material-range [disabled].noUi-target {
+    cursor: not-allowed; }
+  neo-component-material-range .noUi-pips, neo-component-material-range .noUi-pips * {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  neo-component-material-range .noUi-pips {
+    position: absolute;
+    color: #999; }
+  neo-component-material-range .noUi-value {
+    position: absolute;
+    white-space: nowrap;
+    text-align: center; }
+  neo-component-material-range .noUi-value-sub {
+    color: #ccc;
+    font-size: 10px; }
+  neo-component-material-range .noUi-marker {
+    position: absolute;
+    background: #CCC; }
+  neo-component-material-range .noUi-marker-sub {
+    background: #AAA; }
+  neo-component-material-range .noUi-marker-large {
+    background: #AAA; }
+  neo-component-material-range .noUi-pips-horizontal {
+    padding: 10px 0;
+    height: 40px;
+    top: 100%;
+    left: 0;
+    width: 100%; }
+  neo-component-material-range .noUi-value-horizontal {
+    -webkit-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%); }
+  neo-component-material-range .noUi-rtl .noUi-value-horizontal {
+    -webkit-transform: translate(50%, 50%);
+    transform: translate(50%, 50%); }
+  neo-component-material-range .noUi-marker-horizontal.noUi-marker {
+    margin-left: -1px;
+    width: 2px;
+    height: 5px; }
+  neo-component-material-range .noUi-marker-horizontal.noUi-marker-sub {
+    height: 10px; }
+  neo-component-material-range .noUi-marker-horizontal.noUi-marker-large {
+    height: 15px; }
+  neo-component-material-range .noUi-pips-vertical {
+    padding: 0 10px;
+    height: 100%;
+    top: 0;
+    left: 100%; }
+  neo-component-material-range .noUi-value-vertical {
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    padding-left: 25px; }
+  neo-component-material-range .noUi-rtl .noUi-value-vertical {
+    -webkit-transform: translate(0, 50%);
+    transform: translate(0, 50%); }
+  neo-component-material-range .noUi-marker-vertical.noUi-marker {
+    width: 5px;
+    height: 2px;
+    margin-top: -1px; }
+  neo-component-material-range .noUi-marker-vertical.noUi-marker-sub {
+    width: 10px; }
+  neo-component-material-range .noUi-marker-vertical.noUi-marker-large {
+    width: 15px; }
+  neo-component-material-range .noUi-tooltip {
+    display: block;
+    position: absolute;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px;
+    background: #fff;
+    color: #000;
+    padding: 5px;
+    text-align: center;
+    white-space: nowrap; }
+  neo-component-material-range .noUi-horizontal .noUi-tooltip {
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    left: 50%;
+    bottom: 120%; }
+  neo-component-material-range .noUi-vertical .noUi-tooltip {
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    top: 50%;
+    right: 120%; }
+
+neo-component-material-upload {
+  width: calc(100% - 20px);
+  height: 200px;
+  display: inline-block;
+  position: relative;
+  margin: 10px; }
+  neo-component-material-upload > .before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    border: 2px dashed #7218D8;
+    border-radius: 5px;
+    z-index: 2;
+    cursor: pointer; }
+    neo-component-material-upload > .before .file-holder {
+      width: 100%;
+      height: 190px;
+      overflow-x: hidden; }
+      neo-component-material-upload > .before .file-holder li {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        direction: ltr;
+        align-content: center;
+        align-items: center; }
+        neo-component-material-upload > .before .file-holder li img {
+          height: 40px;
+          margin: 10px; }
+        neo-component-material-upload > .before .file-holder li .progress-holder {
+          width: calc(100% - 100px);
+          height: 20px;
+          border-radius: 10px;
+          border: 1px solid #F8F8F8;
+          overflow: hidden; }
+  neo-component-material-upload .upload-holder {
+    height: 200px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    box-sizing: border-box; }
+    neo-component-material-upload .upload-holder > i {
+      font-size: 60px;
+      color: #545454; }
+    neo-component-material-upload .upload-holder h6 {
+      color: #545454; }
+  neo-component-material-upload.ondragenter > .before {
+    border: 2px solid #7218D8; }
+  neo-component-material-upload.ondragenter .upload-holder > i {
+    font-size: 60px;
+    color: #E2E5EC; }
+  neo-component-material-upload.ondragenter .upload-holder h6 {
+    color: #E2E5EC; }
+
+neo-component-material-map {
+  width: calc(100% - 20px);
+  display: inline-block;
+  position: relative;
+  margin: 10px; }
+  neo-component-material-map .map-holder {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #7218D8;
+    border-radius: 5px;
+    box-sizing: border-box; }
+
+neo-component-material-textarea {
+  width: calc(100% - 20px);
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+  box-sizing: border-box; }
+  neo-component-material-textarea textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #E2E5EC;
+    box-sizing: border-box;
+    font-family: 'IRANSans';
+    font-size: 10px; }
+    neo-component-material-textarea textarea:focus {
+      border: 1px solid #7218D8; }
+  neo-component-material-textarea.small textarea {
+    height: 50px; }
+  neo-component-material-textarea.medium textarea {
+    height: 100px; }
+  neo-component-material-textarea.big textarea {
+    height: 200px; }
+
+neo-component-material-button {
+  display: inline-block;
+  position: relative; }
+  neo-component-material-button button {
+    padding: 10px 20px 10px 20px;
+    font-size: 12px;
+    background-color: white;
+    border: 1px solid #E2E5EC;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'IRANSans';
+    transition: ease-in 100ms;
+    color: #545454;
+    outline: none;
+    box-sizing: border-box; }
+    neo-component-material-button button:hover {
+      background-color: #F8F8F8; }
+  neo-component-material-button.tiny button {
+    font-size: 8px;
+    padding: 3px 5px 3px 5px; }
+  neo-component-material-button.small button {
+    font-size: 10px;
+    padding: 6px 10px 6px 10px; }
+  neo-component-material-button.large button {
+    font-size: 14px;
+    padding: 15px 30px 15px 30px; }
+  neo-component-material-button.x-large button {
+    font-size: 16px;
+    padding: 20px 45px 20px 45px; }
+  neo-component-material-button.primary button {
+    background-color: #7218D8;
+    color: white;
+    border: 1px solid #7218D8; }
+    neo-component-material-button.primary button:hover {
+      background-color: #7218a0;
+      border: 1px solid #721878; }
+  neo-component-material-button.primary.outline button {
+    background-color: transparent;
+    color: #7218D8;
+    border: 1px solid #7218D8; }
+    neo-component-material-button.primary.outline button:hover {
+      background-color: #7218D8;
+      color: white;
+      border: 1px solid #721878; }
+  neo-component-material-button.basic button {
+    background-color: #0FABEF;
+    color: white;
+    border: 1px solid #0FABEF; }
+    neo-component-material-button.basic button:hover {
+      background-color: #0a8ad2;
+      border: 1px solid #0067b4; }
+  neo-component-material-button.basic.outline button {
+    background-color: transparent;
+    color: #0FABEF;
+    border: 1px solid #0FABEF; }
+    neo-component-material-button.basic.outline button:hover {
+      background-color: #0FABEF;
+      color: white;
+      border: 1px solid #0067b4; }
+  neo-component-material-button.green button {
+    background-color: #299781;
+    color: white;
+    border: 1px solid #299781; }
+    neo-component-material-button.green button:hover {
+      background-color: #009752;
+      border: 1px solid #009719; }
+  neo-component-material-button.green.outline button {
+    background-color: transparent;
+    color: #299781;
+    border: 1px solid #299781; }
+    neo-component-material-button.green.outline button:hover {
+      background-color: #299781;
+      color: white;
+      border: 1px solid #0067b4; }
+  neo-component-material-button.orange button {
+    background-color: #ff8624;
+    color: white;
+    border: 1px solid #ff8624; }
+    neo-component-material-button.orange button:hover {
+      background-color: #ff7a00;
+      border: 1px solid #ff5d00; }
+  neo-component-material-button.orange.outline button {
+    background-color: transparent;
+    color: #ff8624;
+    border: 1px solid #ff8624; }
+    neo-component-material-button.orange.outline button:hover {
+      background-color: #ff8624;
+      color: white;
+      border: 1px solid #ff5d00; }
+  neo-component-material-button.red button {
+    background-color: #ff2f95;
+    color: white;
+    border: 1px solid #ff2f95; }
+    neo-component-material-button.red button:hover {
+      background-color: #ff1587;
+      border: 1px solid #ff0074; }
+  neo-component-material-button.red.outline button {
+    background-color: transparent;
+    color: #545454;
+    border: 1px solid #ff2f95; }
+    neo-component-material-button.red.outline button:hover {
+      background-color: #ff2f95;
+      color: white;
+      border: 1px solid #ff0074; }
+  neo-component-material-button.curve button {
+    border-radius: 5px; }
+  neo-component-material-button.circle button {
+    border-radius: 25px; }
+  neo-component-material-button.margin {
+    margin: 5px; }
+  neo-component-material-button.big-margin {
+    margin: 10px; }
+  neo-component-material-button.border button {
+    border-width: 2px !important; }
+
+/*# sourceMappingURL=index.css.map */

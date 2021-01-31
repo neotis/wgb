@@ -1,0 +1,474 @@
+neo-component-material-tag {
+  width: calc(100% - 20px);
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+
+  > .tag-input-holder {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 50px;
+    height: auto;
+    position: relative;
+    transition: ease-in 150ms;
+    border: 1px solid $grey;
+
+    .tag-list {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      flex-wrap: wrap;
+      list-style: none;
+
+      li {
+        padding: 4px 12px 4px 12px;
+        background-color: $grey;
+        color: $darkGrey;
+        border-radius: 15px;
+        font-size: 12px;
+        margin: 6px 2px 6px 2px;
+        display: flex;
+        justify-content: space-between;
+        i{
+          font-size: 10px;
+          cursor: pointer;
+          margin: 5px;
+        }
+        input {
+          width: 100px;
+          border:none;
+          outline: none;
+          border-inline: none;
+          font-family: 'IRANSans';
+          font-size: 11px;
+        }
+
+        &:last-child {
+          background-color: transparent;
+        }
+      }
+    }
+
+    > span.prefix, span.postfix {
+      background-color: $grey;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      color: $darkGrey;
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+      padding: 0 10px 0 10px;
+
+      &.icon {
+        font-size: 18px;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    > .title {
+      width: calc(100% - 20px);
+      height: 40px;
+      line-height: 40px;
+      font-size: 13px;
+      font-weight: bold;
+      color: $darkGrey;
+      position: absolute;
+      z-index: 2;
+      right: 15px;
+      top: 10px;
+      cursor: text;
+      transition: ease-in 150ms;
+    }
+
+    > span.status-icon {
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $darkGrey;
+
+      > i {
+        display: none;
+        font-size: 22px;
+
+        &.success {
+          color: $green
+        }
+      }
+    }
+
+    > .inputs {
+      width: 100%;
+      height: inherit;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-content: center;
+
+      > label {
+        width: 100%;
+        font-size: 13px;
+        padding: 2px 10px 2px 10px;
+        font-weight: bold;
+        position: absolute;
+        top: calc(50% - 1em);
+        cursor: text;
+        transition: ease-in 150ms;
+      }
+
+      > input {
+        width: 100%;
+        font-size: 13px;
+        padding: 0 10px 0 10px;
+        box-sizing: border-box;
+        color: $darkGrey;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        font-family: inherit;
+        transition: ease-in 150ms;
+      }
+    }
+  }
+
+  &.medium {
+    .tag-input-holder {
+      > .title {
+        width: calc(100% - 20px);
+        min-height: 30px;
+        line-height: 30px;
+        font-size: 11px;
+        z-index: 2;
+      }
+
+      width: calc(100% - 10px);
+      min-height: 40px;
+      margin: 5px;
+
+      > span.status-icon {
+        width: 40px;
+
+        > i {
+          font-size: 18px;
+        }
+      }
+
+      .inputs {
+        label {
+          font-size: 11px;
+        }
+
+        > input {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+
+  &.slim {
+    .tag-input-holder {
+      > .title {
+        width: calc(100% - 20px);
+        min-height: 30px;
+        line-height: 30px;
+        font-size: 11px;
+        z-index: 2;
+      }
+
+      width: calc(100% - 10px);
+      height: 40px;
+      margin: 5px;
+
+      > span.status-icon {
+        width: 40px;
+
+        > i {
+          font-size: 18px;
+        }
+      }
+
+      .inputs {
+        label {
+          display: none;
+          font-size: 11px;
+        }
+
+        > input {
+          height: inherit;
+          font-size: 11px;
+        }
+      }
+    }
+  }
+
+  &.slim {
+    .tag-input-holder {
+      height: 40px;
+    }
+  }
+
+  &.bg-grey, &.disabled {
+    .tag-input-holder {
+      background-color: $lightGrey;
+    }
+  }
+
+  &.disabled {
+    .tag-input-holder {
+      input {
+        cursor: no-drop;
+      }
+    }
+  }
+
+  &.active {
+    .tag-input-holder {
+      > .title {
+        height: 20px;
+        top: -2px;
+      }
+
+      .inputs {
+        input {
+          position: absolute;
+          height: 20px;
+          bottom: 5px;
+        }
+      }
+    }
+
+    &.medium {
+      .tag-input-holder {
+        > .title {
+          top: 2px;
+        }
+
+        .inputs {
+          label {
+            top: 0;
+          }
+
+          input {
+            bottom: 2px;
+          }
+        }
+      }
+    }
+
+    &.slim {
+      .tag-input-holder {
+        .inputs {
+          input {
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &.focus {
+    .tag-input-holder {
+      > .title {
+        height: 20px;
+        top: -2px;
+        color: $primary
+      }
+
+      border: 1px solid $primary;
+
+      span.prefix, span.postfix {
+        background-color: $primary;
+        color: white;
+      }
+
+      .inputs {
+        label {
+          top: 2px;
+          color: $primary;
+        }
+
+        input {
+          position: absolute;
+          height: 20px;
+          bottom: 5px;
+        }
+      }
+    }
+
+    &.medium {
+      .tag-input-holder {
+        > .title {
+          top: 2px;
+        }
+
+        .inputs {
+          label {
+            top: 0;
+          }
+
+          input {
+            bottom: 2px;
+          }
+        }
+      }
+    }
+
+    &.slim {
+      .tag-input-holder {
+        .inputs {
+          input {
+            height: inherit;
+            bottom: 0;
+            font-size: 13px;
+            color: $darkGrey
+          }
+        }
+      }
+    }
+  }
+
+  &.error {
+    .tag-input-holder {
+      > .title {
+        height: 20px;
+        top: -2px;
+        color: $error
+      }
+
+      border: 1px solid $error;
+
+      input {
+        position: absolute;
+        height: 20px;
+        bottom: 5px;
+      }
+    }
+  }
+
+  &.circle {
+    .tag-input-holder {
+      > .title {
+        width: calc(100% - 25px);
+        right: 25px;
+      }
+
+      border-radius: 25px;
+      overflow: hidden;
+
+      .inputs {
+        label {
+          padding-right: 20px;
+        }
+
+        input {
+          width: calc(100% - 10px);
+          position: absolute;
+          height: 20px;
+          bottom: 5px;
+          right: 10px;
+        }
+      }
+    }
+
+    &.slim {
+      .tag-input-holder {
+        .inputs {
+          input {
+            height: inherit;
+            bottom: 0;
+            right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  &.curve {
+    .tag-input-holder {
+      border-radius: 5px;
+      overflow: hidden;
+
+      input {
+        width: calc(100% - 10px);
+        position: absolute;
+        height: 20px;
+        bottom: 5px;
+        right: 0;
+      }
+    }
+
+    &.slim {
+      .tag-input-holder {
+        .inputs {
+          input {
+            height: inherit;
+            bottom: 0;
+          }
+        }
+      }
+    }
+
+    span.prefix, span.postfix {
+      background-color: $green;
+      color: white;
+    }
+  }
+
+  &.success {
+    .tag-input-holder {
+      > .title {
+        height: 20px;
+        top: -2px;
+        color: $green
+      }
+
+      border: 1px solid $green;
+
+      input {
+        position: absolute;
+        height: 20px;
+        bottom: 5px;
+      }
+
+      .status-icon {
+        i.success {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &.shadow {
+    .tag-input-holder {
+      -webkit-box-shadow: 0px 3px 20px 0px rgba(113, 106, 202, 0.11);
+      box-shadow: 0px 3px 20px 0px rgba(113, 106, 202, 0.11);
+    }
+  }
+
+  &.prefix-transparent {
+    span.prefix, span.postfix {
+      background-color: transparent;
+      color: $darkGrey
+    }
+
+    &.focus {
+      span.prefix, span.postfix {
+        background-color: transparent;
+        color: $darkGrey;
+      }
+    }
+
+    &.active {
+      span.prefix, span.postfix {
+        background-color: transparent;
+        color: $darkGrey;
+      }
+    }
+  }
+}

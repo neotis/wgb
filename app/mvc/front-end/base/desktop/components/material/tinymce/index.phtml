@@ -1,0 +1,26 @@
+<neoscript src="https://cdn.tiny.cloud/1/o67t82gqz4qjaxy6tulxu5c78n82t37bwfp41vwzku8wkrc6/tinymce/5/tinymce.min.js"></neoscript>
+<?php $rand = rand(1, 1000000); ?>
+<textarea type="tinymce" name="<?php echo $data['name']; ?>" id="<?php echo $data['id']; ?>"><?php if(isset($data['value']) and !empty($data['value'])){echo $data['value'];} ?></textarea>
+<script>
+    function tinymcecreator(ele){
+        type = typeof tinymce;
+        if(type === 'undefined'){
+            $.getScript("https://cdn.tiny.cloud/1/o67t82gqz4qjaxy6tulxu5c78n82t37bwfp41vwzku8wkrc6/tinymce/5/tinymce.min.js", function(response,status){
+                if(status === 'success'){
+                    tinymce.remove();
+                    tinymce.init({
+                        selector: '#'+ele,
+                        plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+                        toolbar_mode: 'floating',
+                    });
+                }
+            });
+        }else{
+            tinymce.init({
+                selector: '#'+ele,
+                plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+                toolbar_mode: 'floating',
+            });
+        }
+    }
+</script>

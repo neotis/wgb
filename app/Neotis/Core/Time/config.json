@@ -1,0 +1,46 @@
+{
+  "event": [
+    {
+      "name": "timeSettings",
+      "status": "true",
+      "object": "Neotis\\Core\\Time\\Basic",
+      "method": "run",
+      "arguments": [],
+      "comment": "Define basic settings of date and time",
+      "position": "before::header"
+    }
+  ],
+  "cli_event": [
+    {
+      "name": "timeSettings",
+      "status": "true",
+      "object": "Neotis\\Core\\Time\\Basic",
+      "method": "run",
+      "arguments": [],
+      "comment": "Define basic settings of date and time",
+      "position": "before::header"
+    }
+  ],
+  "watcher_event": [
+    {
+      "name": "timeSettings",
+      "status": "true",
+      "object": "Neotis\\Core\\Time\\Basic",
+      "method": "run",
+      "arguments": [],
+      "comment": "Define basic settings of date and time",
+      "position": "before::header"
+    }
+  ],
+  "test_event": [
+    {
+      "name": "timeSettings",
+      "status": "true",
+      "object": "Neotis\\Core\\Time\\Basic",
+      "method": "run",
+      "arguments": [],
+      "comment": "Define basic settings of date and time",
+      "position": "before::header"
+    }
+  ]
+}

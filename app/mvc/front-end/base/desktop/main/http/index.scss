@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'SegoeUI';
+  src: url("neo_assets/fonts/SegoeUI.eot");
+  src: url("neo_assets/fonts/SegoeUI.woff") format("woff"), url("neo_assets/fonts/SegoeUI.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SegoeUI-Bold';
+  src: url('neo_assets/fonts/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),  url('neo_assets/fonts/SegoeUI-Bold.woff') format('woff'), url('neo_assets/fonts/SegoeUI-Bold.ttf')  format('truetype'), url('neo_assets/fonts/SegoeUI-Bold.svg#SegoeUI-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.http {
+  h6,h5,h4,h3,h2,h1{
+    font-family: "SegoeUI-Bold";
+    box-sizing: border-box;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  min-width: 100vw;
+  min-height: 100vh;
+  background: rgb(109,17,215);
+  background: linear-gradient(335deg, rgba(109,17,215,1) 0%, rgba(109,17,215,1) 39%, rgba(9,168,186,1) 100%);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-family: "SegoeUI";
+  &::after{
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-image: url("neo_assets/img/fully-color.svg");
+    background-size: 90%;
+    @media screen and (max-width: 1024px) {
+      background-size: 120%;
+    }
+    @media screen and (max-width: 768px) {
+      background-size: 150%;
+    }
+    @media screen and (max-width: 425px) {
+      background-size: 200%;
+    }
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  >.holder{
+    width: 50vw;
+    height: 50vh;
+    @media screen and (max-width: 1024px) {
+      width: 75vw;
+      height: 50vh;
+    }
+    @media screen and (max-width: 768px) {
+      width: 90vw;
+      height: 50vh;
+    }
+    @media screen and (max-width: 425px) {
+      width: 95vw;
+      height: 50vh;
+    }
+    background-color: rgba(114, 24, 216, 0.8);
+    border: 1px solid white;
+    position: relative;
+    .content{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 2;
+    }
+  }
+}

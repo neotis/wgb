@@ -1,0 +1,11 @@
+{
+  "event": {
+    "name": "loginStatus",
+    "status": "true",
+    "object": "Neotis\\Plugins\\Users\\Status",
+    "method": "check",
+    "arguments": [],
+    "comment": "Check status of user if login or not",
+    "position": "before::pageAccess"
+  }
+}

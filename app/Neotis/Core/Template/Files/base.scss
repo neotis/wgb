@@ -1,0 +1,187 @@
+@-webkit-keyframes spinner /* Safari and Chrome */
+{
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  -webkit-animation: spinner 2s linear infinite;
+  -moz-animation: spinner 2s linear infinite;
+  -ms-animation: spinner 2s linear infinite;
+  -o-animation: spinner 2s linear infinite;
+  animation: spinner 2s linear infinite;
+}
+
+body.neo-styles {
+  margin: 0;
+  padding: 0;
+
+
+  p, ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  i {
+    height: 1.2em !important;
+    width: 1em !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .rtl {
+    direction: rtl;
+  }
+
+  .ltr {
+    direction: ltr;
+  }
+
+  .light-shadow {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .align-center {
+    align-items: center;
+  }
+
+  .align-start {
+    align-items: flex-start;
+  }
+
+  .align-end {
+    align-items: flex-end;
+  }
+
+  .align-stretch {
+    align-items: stretch;
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
+
+  .justify-start {
+    justify-content: flex-start;
+  }
+
+  .justify-end {
+    justify-content: flex-end;
+  }
+
+  .justify-space-around {
+    justify-content: space-around;
+  }
+
+  .justify-space-between {
+    justify-content: space-between;
+  }
+
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .align-content-center {
+    align-content: center;
+  }
+
+  .align-content-stretch {
+    align-content: stretch;
+  }
+
+  .align-content-end {
+    align-content: flex-end;
+  }
+
+  .align-content-start {
+    align-content: flex-start;
+  }
+
+  .relative {
+    position: relative;
+  }
+
+  .absolute {
+    position: absolute;
+  }
+
+  .fixed {
+    position: fixed;
+  }
+
+  .cursor-pointer {
+    cursor: pointer;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .text-right {
+    text-align: right;
+  }
+
+  .text-left {
+    text-align: left;
+  }
+
+  .line {
+    width: 100%;
+    margin: 10px 0 10px 0;
+    border-bottom: 1px solid lightgrey;
+
+    &.dashed {
+      border-bottom: 1px dashed lightgrey;
+    }
+  }
+
+  @media screen and (min-width: 1025px) {
+    .hide-normal {
+      display: none;
+    }
+  }
+
+  @import 'Components/TopLoader.scss';
+  @import 'Components/ToolTip.scss';
+  @import 'Basic/Grid.scss';
+}

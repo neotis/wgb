@@ -1,0 +1,35 @@
+neo-component-processloader {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: none;
+  z-index: 100001; }
+  neo-component-processloader.active {
+    display: block; }
+  neo-component-processloader .process {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 5px; }
+    neo-component-processloader .process .load {
+      width: 50%;
+      height: 10px;
+      background-color: #9cffff;
+      line-height: 10px;
+      text-align: center;
+      color: #188787;
+      font-size: 10px;
+      font-weight: bold; }
+      neo-component-processloader .process .load.success {
+        background-color: #00BE8A;
+        color: white; }
+      neo-component-processloader .process .load.error {
+        background-color: #ff0074;
+        color: white; }
+    neo-component-processloader .process:nth-child(1) {
+      margin-top: 0; }
+
+/*# sourceMappingURL=index.css.map */

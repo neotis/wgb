@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'SegoeUI';
+  src: url("neo_assets/fonts/SegoeUI.eot");
+  src: url("neo_assets/fonts/SegoeUI.woff") format("woff"), url("neo_assets/fonts/SegoeUI.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'SegoeUI-Bold';
+  src: url("neo_assets/fonts/SegoeUI-Bold.eot?#iefix") format("embedded-opentype"), url("neo_assets/fonts/SegoeUI-Bold.woff") format("woff"), url("neo_assets/fonts/SegoeUI-Bold.ttf") format("truetype"), url("neo_assets/fonts/SegoeUI-Bold.svg#SegoeUI-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+.http {
+  min-width: 100vw;
+  min-height: 100vh;
+  background: #6d11d7;
+  background: linear-gradient(335deg, #6d11d7 0%, #6d11d7 39%, #09a8ba 100%);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-family: "SegoeUI"; }
+  .http h6, .http h5, .http h4, .http h3, .http h2, .http h1 {
+    font-family: "SegoeUI-Bold";
+    box-sizing: border-box;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 0; }
+  .http::after {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-image: url("neo_assets/img/fully-color.svg");
+    background-size: 90%;
+    background-position: center center;
+    background-repeat: no-repeat; }
+    @media screen and (max-width: 1024px) {
+      .http::after {
+        background-size: 120%; } }
+    @media screen and (max-width: 768px) {
+      .http::after {
+        background-size: 150%; } }
+    @media screen and (max-width: 425px) {
+      .http::after {
+        background-size: 200%; } }
+  .http > .holder {
+    width: 50vw;
+    height: 50vh;
+    background-color: rgba(114, 24, 216, 0.8);
+    border: 1px solid white;
+    position: relative; }
+    @media screen and (max-width: 1024px) {
+      .http > .holder {
+        width: 75vw;
+        height: 50vh; } }
+    @media screen and (max-width: 768px) {
+      .http > .holder {
+        width: 90vw;
+        height: 50vh; } }
+    @media screen and (max-width: 425px) {
+      .http > .holder {
+        width: 95vw;
+        height: 50vh; } }
+    .http > .holder .content {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 2; }
+
+/*# sourceMappingURL=index.css.map */

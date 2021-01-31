@@ -1,0 +1,45 @@
+<div class="text-input-holder">
+    <!-- Prefix title and icon -->
+    <?php if (isset($data['prefix-title']) and !empty($data['prefix-title'])) { ?>
+        <span class="prefix"><?php echo $data['prefix-title']; ?></span>
+    <?php } elseif (isset($data['prefix-icon']) and !empty($data['prefix-icon'])) { ?>
+        <span class="prefix icon">
+            <i class="<?php echo $data['prefix-icon']; ?>"></i>
+        </span>
+    <?php } ?>
+    <!-- /Prefix title and icon -->
+
+    <!-- Input -->
+    <?php
+        $disabled = '';
+        if (isset($data['class']) and strpos($data['class'], "disabled") > -1) {
+            $disabled = 'disabled';
+        }
+    ?>
+
+    <div class="inputs">
+        <label for="<?php echo $data['id']; ?>" class="title"><?php echo $data['placeholder']; ?></label>
+        <?php if (isset($data['class']) and strpos($data['class'], "slim") > -1) { ?>
+            <input <?php if(isset($data['value']) and !empty($data['value'])){echo 'value="'.$data['value'].'"';} ?> id="<?php echo $data['id']; ?>" placeholder="<?php echo $data['placeholder']; ?>" name="<?php echo $data['name']; ?>" type="<?php echo $data['type']; ?>" <?php echo $disabled; ?>>
+        <?php } else { ?>
+            <input <?php if(isset($data['value']) and !empty($data['value'])){echo 'value="'.$data['value'].'"';} ?> id="<?php echo $data['id']; ?>" name="<?php echo $data['name']; ?>" type="<?php echo $data['type']; ?>" <?php echo $disabled; ?>>
+        <?php } ?>
+    </div>
+    <!-- /Input -->
+
+    <!-- Status icons of input -->
+    <span class="status-icon">
+        <i class="icon neo-basic-tick success"></i>
+    </span>
+    <!-- /Status icons of input -->
+
+    <!-- Prefix title and icon -->
+    <?php if (isset($data['postfix-title']) and !empty($data['postfix-title'])) { ?>
+        <span class="postfix"><?php echo $data['postfix-title']; ?></span>
+    <?php } elseif (isset($data['postfix-icon']) and !empty($data['postfix-icon'])) { ?>
+        <span class="postfix icon">
+            <i class="<?php echo $data['postfix-icon']; ?>"></i>
+        </span>
+    <?php } ?>
+    <!-- /Prefix title and icon -->
+</div>

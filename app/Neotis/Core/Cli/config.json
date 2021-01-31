@@ -1,0 +1,13 @@
+{
+  "cli_event": [
+    {
+      "name": "cli",
+      "status": "true",
+      "object": "Neotis\\Core\\Cli\\Cli",
+      "method": "run",
+      "arguments": [],
+      "comment": "Run cli command",
+      "position": "end"
+    }
+  ]
+}

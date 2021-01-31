@@ -1,0 +1,24 @@
+{
+  "name": "Home Page of neotis projects website",
+  "language": "Persian",
+  "parent": "base",
+  "status": "active",
+  "defaults": {
+    "controller": "index",
+    "action": "index"
+  },
+  "timeZone": "Asia/Tehran",
+  "remote_access": "false",
+  "programmer": "",
+  "extends_controller": "ControllerBase",
+  "classification": "",
+  "share_models": ["persian_models", "old_models"],
+  "author": "",
+  "category": "",
+  "security_access": false,
+  "coverage": "",
+  "distribution": "",
+  "revisit_after": "",
+  "cache": false,
+  "twig": false
+}

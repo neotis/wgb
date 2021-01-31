@@ -1,0 +1,46 @@
+{
+  "event": [
+    {
+      "name": "constant",
+      "status": "true",
+      "object": "Neotis\\Core\\Constants\\Manager",
+      "method": "define",
+      "arguments": [],
+      "comment": "Constant class for define basic and necessary constant",
+      "position": "start"
+    }
+  ],
+  "cli_event": [
+    {
+      "name": "constant",
+      "status": "true",
+      "object": "Neotis\\Core\\Constants\\Manager",
+      "method": "define",
+      "arguments": [],
+      "comment": "Constant class for define basic and necessary constant",
+      "position": "start"
+    }
+  ],
+  "watcher_event": [
+    {
+      "name": "constant",
+      "status": "true",
+      "object": "Neotis\\Core\\Constants\\Manager",
+      "method": "define",
+      "arguments": [],
+      "comment": "Constant class for define basic and necessary constant",
+      "position": "start"
+    }
+  ],
+  "test_event": [
+    {
+      "name": "constant",
+      "status": "true",
+      "object": "Neotis\\Core\\Constants\\Manager",
+      "method": "define",
+      "arguments": [],
+      "comment": "Constant class for define basic and necessary constant",
+      "position": "start"
+    }
+  ]
+}

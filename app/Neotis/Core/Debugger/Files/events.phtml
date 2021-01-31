@@ -1,0 +1,29 @@
+<div id="events" class="row content">
+    <table class="table table-striped table-responsive-md btn-table">
+
+        <thead>
+        <tr>
+            <th>Row</th>
+            <th>Name</th>
+            <th>Object</th>
+            <th>Method</th>
+            <th>Arguments</th>
+            <th>Comment</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <?php $x = 0; foreach(\Neotis\Core\Events\Jobs::$prioritize as $key => $value) { $x++; ?>
+            <tr>
+                <th scope="row"><?php echo $x; ?></th>
+                <td><strong style="color: black"><?php echo $value['name']; ?></strong></td>
+                <td><?php echo $value['object']; ?></td>
+                <td><?php echo $value['method']; ?></td>
+                <td><?php echo json_encode($value['arguments']); ?></td>
+                <td><?php echo $value['comment']; ?></td>
+            </tr>
+        <?php } ?>
+        </tbody>
+
+    </table>
+</div>

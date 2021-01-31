@@ -1,0 +1,52 @@
+<?php if(!isset($x_select)){$x_select = 0;} if(!isset($data['id'])){ $data['id'] = 'neo_select_dynamic_' . $x_select; $x_select++; }?>
+<div class="text-input-holder">
+    <!-- Prefix title and icon -->
+    <?php if (isset($data['prefix-title']) and !empty($data['prefix-title'])) { ?>
+        <span class="prefix"><?php echo $data['prefix-title']; ?></span>
+    <?php } elseif (isset($data['prefix-icon']) and !empty($data['prefix-icon'])) { ?>
+        <span class="prefix icon">
+            <i class="<?php echo $data['prefix-icon']; ?>"></i>
+        </span>
+    <?php } ?>
+    <!-- /Prefix title and icon -->
+
+    <!-- Input -->
+    <?php
+        $disabled = '';
+        if (isset($data['class']) and strpos($data['class'], "disabled") > -1) {
+            $disabled = 'disabled';
+        }
+    ?>
+    <div class="inputs">
+        <label for="<?php echo $data['id']; ?>" class="title"><?php echo $data['placeholder']; ?></label>
+        <span>
+            <i class="icon neo-angle-down"></i>
+        </span>
+        <select <?php if(isset($data['change']) and !empty($data['change'])){echo 'change-type="'.$data['change'].'"';} ?> <?php if(isset($data['change-path']) and !empty($data['change-path'])){echo 'change-path="'.$data['change-path'].'"';} ?> <?php if(isset($data['value']) and !empty($data['value'])){echo 'value="'.$data['value'].'"';} ?> id="<?php echo $data['id']; ?>" name="<?php echo $data['name']; ?>">
+            <option value="1"></option>
+        </select>
+    </div>
+    <!-- /Input -->
+
+    <!-- Status icons of input -->
+    <span class="status-icon">
+        <i class="icon neo-basic-tick success"></i>
+    </span>
+    <!-- /Status icons of input -->
+
+    <!-- Prefix title and icon -->
+    <?php if (isset($data['postfix-title']) and !empty($data['postfix-title'])) { ?>
+        <span class="postfix"><?php echo $data['postfix-title']; ?></span>
+    <?php } elseif (isset($data['postfix-icon']) and !empty($data['postfix-icon'])) { ?>
+        <span class="postfix icon">
+            <i class="<?php echo $data['postfix-icon']; ?>"></i>
+        </span>
+    <?php } ?>
+    <!-- /Prefix title and icon -->
+</div>
+<div class="list">
+    <div class="search-holder">
+        <input name="search-selectbox" tabindex="0" type="text">
+        <ul tabindex="0"></ul>
+    </div>
+</div>

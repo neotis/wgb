@@ -1,0 +1,114 @@
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<?php if(isset($seo_keys)){ ?>
+    <meta name="keywords" content="<?php echo $seo_keys; ?>">
+<?php } ?>
+<?php if(isset($seo_description)){ ?>
+    <meta name="description" content="<?php echo $seo_description; ?>"/>
+    <meta property="og:description" content="<?php echo $seo_description; ?>" />
+    <meta property="twitter:description" content="<?php echo $seo_description; ?>">
+<?php } ?>
+<?php if(isset($seo_type)){ ?>
+    <meta property="og:type" content="<?php echo $seo_type; ?>" />
+<?php } ?>
+<?php if(isset($seo_title)){ ?>
+    <meta name="title" content="<?php echo $seo_title; ?>">
+    <meta property="og:title" content="<?php echo $seo_title; ?>" />
+    <meta property="twitter:title" content="<?php echo $seo_title; ?>">
+<?php } ?>
+<?php if(isset($seo_image)){ ?>
+    <meta property="og:image" content="<?php echo $seo_image; ?>" />
+    <meta property="twitter:image" content="<?php echo $seo_image; ?>">
+<?php }else{ ?>
+    <meta property="og:image" content="https://hypertire.com/files/hypertire_intro.jpg" />
+    <meta property="twitter:image" content="https://hypertire.com/files/hypertire_intro.jpg">
+<?php } ?>
+<?php if(isset($seo_name)){ ?>
+    <meta property="og:site_name" content="<?php echo $seo_name; ?>" />
+<?php } ?>
+<?php if(isset($seo_canonical)){ ?>
+    <meta property="twitter:url" content="<?php echo $seo_canonical; ?>">
+    <meta property="og:url" content="<?php echo $seo_canonical; ?>" />
+    <link rel="canonical" href="<?php echo $seo_canonical; ?>" />
+<?php } ?>
+<?php if(isset($seo_structure_type) and $seo_structure_type === 'article') { ?>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "<?php echo $seo_canonical; ?>"
+        },
+        "headline": "<?php echo $seo_structure_title; ?>",
+        "image": [
+            <?php foreach($seo_structure_images as $key => $value) { ?>
+                "<?php echo $value; ?>"
+            <?php } ?>
+        ],
+        "datePublished": "<?php echo $seo_structure_publish_date; ?>",
+        "dateModified": "<?php echo $seo_structure_publish_modify; ?>",
+        "author": {
+            "@type": "<?php echo $seo_structure_author_type; ?>",
+            "name": "<?php echo $seo_structure_author; ?>"
+        },
+        "publisher": {
+            "@type": "<?php echo $seo_structure_publisher_type; ?>",
+            "name": "<?php echo $seo_structure_publisher_name; ?>",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "<?php echo $seo_structure_logo; ?>"
+            }
+        }
+    }
+</script>
+<?php }elseif(isset($seo_structure_type) and $seo_structure_type === 'product'){ ?>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "Product",
+            "name": "<?php echo $seo_structure_title; ?>",
+            "image": [
+            <?php foreach($seo_structure_images as $key => $value) { ?>
+                "<?php echo $value; ?>"
+            <?php } ?>
+            ],
+            "description": "<?php echo $seo_structure_description; ?>",
+            "sku": "",
+            "mpn": "",
+            "brand": {
+                "@type": "Brand",
+                "name": "<?php echo $seo_structure_product_brand; ?>"
+            },
+            "review": {
+                "@type": "Review",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "<?php echo $seo_structure_product_rating_average; ?>",
+                    "bestRating": "<?php echo $seo_structure_product_rating_best; ?>"
+                },
+                "author": {
+                    "@type": "<?php echo $seo_structure_author_type; ?>",
+                    "name": "<?php echo $seo_structure_author; ?>"
+                }
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "<?php echo $seo_structure_product_aggregate_rating_average; ?>",
+                "reviewCount": "<?php echo $seo_structure_product_aggregate_rating_count; ?>"
+            }
+        }
+    </script>
+<?php } ?>
+<?php if(isset($seo_logo_dstructure) and $seo_logo_dstructure === 'logo') { ?>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "<?php echo $seo_logo_structure_url; ?>",
+            "logo": "<?php echo $seo_logo_structure_title; ?>"
+        }
+    </script>
+<?php } ?>

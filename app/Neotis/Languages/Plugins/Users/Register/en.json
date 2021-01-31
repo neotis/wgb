@@ -1,0 +1,5 @@
+{
+  "username_exist": "The username is already exist in our database",
+  "register_problem": "We have problem to register your information please try again later!",
+  "complete_info": "There is a problem with completing the user information."
+}

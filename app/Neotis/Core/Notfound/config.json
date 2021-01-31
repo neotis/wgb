@@ -1,0 +1,11 @@
+{
+  "event": {
+    "name": "notfound",
+    "status": "true",
+    "object": "Neotis\\Core\\Notfound\\Manager",
+    "method": "run",
+    "arguments": [],
+    "comment": "Define router information",
+    "position": "before::controller"
+  }
+}

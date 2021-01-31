@@ -1,0 +1,13 @@
+{
+  "event": [
+    {
+      "name": "template",
+      "status": "true",
+      "object": "Neotis\\Core\\Template\\Manager",
+      "method": "run",
+      "arguments": [],
+      "comment": "Define template manager",
+      "position": "before::screenResult"
+    }
+  ]
+}

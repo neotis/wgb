@@ -1,0 +1,46 @@
+{
+  "event": [
+    {
+      "name": "settings",
+      "status": "true",
+      "object": "Neotis\\Core\\Ini\\Manager",
+      "method": "run",
+      "arguments": [],
+      "comment": "Define basic settings of application",
+      "position": "after::constant"
+    }
+  ],
+  "cli_event": [
+    {
+      "name": "settings",
+      "status": "true",
+      "object": "Neotis\\Core\\Ini\\Manager",
+      "method": "run",
+      "arguments": [],
+      "comment": "Define basic settings of application",
+      "position": "after::constant"
+    }
+  ],
+  "watcher_event": [
+    {
+      "name": "settings",
+      "status": "true",
+      "object": "Neotis\\Core\\Ini\\Manager",
+      "method": "run",
+      "arguments": [],
+      "comment": "Define basic settings of application",
+      "position": "after::constant"
+    }
+  ],
+  "test_event": [
+    {
+      "name": "settings",
+      "status": "true",
+      "object": "Neotis\\Core\\Ini\\Manager",
+      "method": "run",
+      "arguments": [],
+      "comment": "Define basic settings of application",
+      "position": "after::constant"
+    }
+  ]
+}

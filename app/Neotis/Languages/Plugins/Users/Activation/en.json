@@ -1,0 +1,9 @@
+{
+  "username_exist": "The user is not available in our database",
+  "userinfo_exist": "Additional user information is not available in our database",
+  "complete_info": "There are still 60 seconds left to send the new activation code.",
+  "success_send": "The activation code was successfully sent to the user.",
+  "activation_info": "Activation code information is not exist for selected user",
+  "wrong_code": "Activation code is not correct!",
+  "max_use": "The number allowed to pass the activation code sent is over. Please send another code."
+}

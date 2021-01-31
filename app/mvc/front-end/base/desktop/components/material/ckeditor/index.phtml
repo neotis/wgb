@@ -1,0 +1,16 @@
+<neoscript src="neo_assets/ckeditor/ckeditor.js"></neoscript>
+<textarea type="ckeditor" name="<?php echo $data['name']; ?>" id="<?php echo $data['id']; ?>"><?php if(isset($data['value']) and !empty($data['value'])){echo $data['value'];} ?></textarea>
+<script>
+    function ckeditorcreator(ele) {
+        type = typeof CKEDITOR;
+        if (type !== 'undefined') {
+            CKEDITOR.replace(ele, {
+                customConfig: '/base/desktop/components/material/ckeditor/assets/ckeditor/config.js',
+                removePlugins: 'easyimage',
+                extraPlugins: 'filebrowser',
+                filebrowserBrowsUrl: '/dashboard/users/upload/',
+                filebrowserUploadUrl: '/dashboard/users/upload/',
+            });
+        }
+    }
+</script>

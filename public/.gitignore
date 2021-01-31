@@ -1,0 +1,8 @@
+!debugger/
+!debugger/**
+!files/
+!files/**
+!.htaccess
+!index.php
+!favicon.ico
+!.gitignore

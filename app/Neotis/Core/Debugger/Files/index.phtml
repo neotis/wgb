@@ -1,0 +1,39 @@
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<!-- Bootstrap core CSS -->
+<link href="/debugger/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="/debugger/css/mdb.min.css" rel="stylesheet">
+<!-- Your custom styles (optional) -->
+<link href="/debugger/css/style.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="/debugger/css/styles.css">
+<div class="neotis-debugger">
+    <div class="row">
+        <i id="menu-selector" class="fas fa-bars"></i>
+        <h3 id="title"></h3>
+        <i id="close" class="fas fa-times"></i>
+        <ul id="menu">
+            <li value="events">Events</li>
+            <li>Exceptions</li>
+            <li>Route path</li>
+            <li value="memory">Memory usage</li>
+            <li value="includes">Included files</li>
+        </ul>
+    </div>
+    <?php include 'events.phtml'; ?>
+    <?php include 'includes.phtml'; ?>
+    <?php include 'memory.phtml'; ?>
+</div>
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="/debugger/js/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="/debugger/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="/debugger/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="/debugger/js/mdb.min.js"></script>
+
+<script type="text/javascript" src="/debugger/js/operators.js"></script>

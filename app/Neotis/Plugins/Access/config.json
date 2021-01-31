@@ -1,0 +1,11 @@
+{
+  "event": {
+    "name": "pageAccess",
+    "status": "true",
+    "object": "Neotis\\Plugins\\Access\\Pages",
+    "method": "run",
+    "arguments": [],
+    "comment": "Check the user authentication status for access to the requested page",
+    "position": "none"
+  }
+}

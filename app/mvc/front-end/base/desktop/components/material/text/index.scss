@@ -1,0 +1,441 @@
+neo-component-material-text {
+  width: calc(100% - 20px);
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  >.text-input-holder {
+    width: 100%;
+    box-sizing: border-box;
+    height: 50px;
+    min-height: 0 !important;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+    transition: ease-in 150ms;
+    border: 1px solid $grey;
+
+    > span.prefix, span.postfix {
+      background-color: $grey;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      color: $darkGrey;
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+      padding: 0 10px 0 10px;
+
+      &.icon {
+        font-size: 18px;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    > .title {
+      width: calc(100% - 20px);
+      height: 40px;
+      line-height: 40px;
+      font-size: 13px;
+      font-weight: bold;
+      color: $darkGrey;
+      position: absolute;
+      z-index: 2;
+      right: 15px;
+      top: 10px;
+      cursor: text;
+      transition: ease-in 150ms;
+    }
+
+
+    > span.status-icon {
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $darkGrey;
+
+      > i {
+        display: none;
+        font-size: 22px;
+
+        &.success {
+          color: $green
+        }
+      }
+    }
+
+    > .inputs {
+      width: 100%;
+      height: inherit;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-content: center;
+
+      > label {
+        width: 100%;
+        font-size: 13px;
+        padding: 2px 10px 2px 10px;
+        font-weight: bold;
+        position: absolute;
+        top: calc(50% - 1em);
+        cursor: text;
+        transition: ease-in 150ms;
+      }
+
+      > input {
+        width: 100%;
+        font-size: 13px;
+        padding: 0 10px 0 10px;
+        box-sizing: border-box;
+        color: $darkGrey;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        font-family: inherit;
+        transition: ease-in 150ms;
+      }
+    }
+  }
+
+  &.medium {
+    .text-input-holder {
+      > .title {
+        width: calc(100% - 20px);
+        height: 30px;
+        line-height: 30px;
+        font-size: 11px;
+        z-index: 2;
+      }
+
+      width: calc(100% - 10px);
+      height: 40px;
+      margin: 5px;
+
+      > span.status-icon {
+        width: 40px;
+
+        > i {
+          font-size: 18px;
+        }
+      }
+
+      .inputs {
+        label {
+          font-size: 11px;
+        }
+
+        > input {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+
+  &.slim {
+    .text-input-holder {
+      > .title {
+        width: calc(100% - 20px);
+        height: 30px;
+        line-height: 30px;
+        font-size: 11px;
+        z-index: 2;
+      }
+
+      width: calc(100% - 10px);
+      height: 40px;
+      margin: 5px;
+
+      > span.status-icon {
+        width: 40px;
+
+        > i {
+          font-size: 18px;
+        }
+      }
+
+      .inputs {
+        label {
+          display: none;
+          font-size: 11px;
+        }
+
+        > input {
+          height: inherit;
+          font-size: 11px;
+        }
+      }
+    }
+  }
+
+  &.slim {
+    .text-input-holder {
+      height: 40px;
+    }
+  }
+
+  &.bg-grey, &.disabled {
+    .text-input-holder {
+        background-color: $lightGrey;
+    }
+  }
+
+  &.disabled {
+    .text-input-holder {
+        input{
+          cursor: no-drop;
+        }
+    }
+  }
+
+  &.active {
+    .text-input-holder {
+      > .title {
+        height: 20px;
+        top: -2px;
+      }
+
+      .inputs {
+        input {
+          position: absolute;
+          height: 20px;
+          bottom: 5px;
+        }
+      }
+    }
+
+    &.medium {
+      .text-input-holder {
+        > .title {
+          top: 2px;
+        }
+
+        .inputs {
+          label {
+            top: 0;
+          }
+
+          input {
+            bottom: 2px;
+          }
+        }
+      }
+    }
+
+    &.slim {
+      .text-input-holder {
+        .inputs {
+          input {
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &.focus {
+    .text-input-holder {
+      > .title {
+        height: 20px;
+        top: -2px;
+        color: $primary
+      }
+
+      border: 1px solid $primary;
+
+      span.prefix, span.postfix {
+        background-color: $primary;
+        color: white;
+      }
+
+      .inputs {
+        label {
+          top: 2px;
+          color: $primary;
+        }
+
+        input {
+          position: absolute;
+          height: 20px;
+          bottom: 5px;
+        }
+      }
+    }
+
+    &.medium {
+      .text-input-holder {
+        > .title {
+          top: 2px;
+        }
+
+        .inputs {
+          label {
+            top: 0;
+          }
+
+          input {
+            bottom: 2px;
+          }
+        }
+      }
+    }
+
+    &.slim {
+      .text-input-holder {
+        .inputs {
+          input {
+            height: inherit;
+            bottom: 0;
+            font-size: 13px;
+            color: $darkGrey
+          }
+        }
+      }
+    }
+  }
+
+  &.error {
+    .text-input-holder {
+      > .title {
+        height: 20px;
+        top: -2px;
+        color: $error
+      }
+
+      border: 1px solid $error;
+
+      input {
+        position: absolute;
+        height: 20px;
+        bottom: 5px;
+      }
+    }
+  }
+
+  &.circle {
+    .text-input-holder {
+      > .title {
+        width: calc(100% - 25px);
+        right: 25px;
+      }
+
+      border-radius: 25px;
+      overflow: hidden;
+
+      .inputs {
+        label {
+          padding-right: 20px;
+        }
+
+        input {
+          width: calc(100% - 10px);
+          position: absolute;
+          height: 20px;
+          bottom: 5px;
+          right: 10px;
+        }
+      }
+    }
+
+    &.slim {
+      .text-input-holder {
+        .inputs {
+          input {
+            height: inherit;
+            bottom: 0;
+            right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  &.curve {
+    .text-input-holder {
+      border-radius: 5px;
+      overflow: hidden;
+
+      input {
+        width: calc(100% - 10px);
+        position: absolute;
+        height: 20px;
+        bottom: 5px;
+        right: 0;
+      }
+    }
+
+    &.slim {
+      .text-input-holder {
+        .inputs {
+          input {
+            height: inherit;
+            bottom: 0;
+          }
+        }
+      }
+    }
+
+    span.prefix, span.postfix {
+      background-color: $green;
+      color: white;
+    }
+  }
+
+  &.success {
+    .text-input-holder {
+      > .title {
+        height: 20px;
+        top: -2px;
+        color: $green
+      }
+
+      border: 1px solid $green;
+
+      input {
+        position: absolute;
+        height: 20px;
+        bottom: 5px;
+      }
+
+      .status-icon {
+        i.success {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &.shadow {
+    .text-input-holder {
+      -webkit-box-shadow: 0px 3px 20px 0px rgba(113, 106, 202, 0.11);
+      box-shadow: 0px 3px 20px 0px rgba(113, 106, 202, 0.11);
+    }
+  }
+
+  &.prefix-transparent {
+    span.prefix, span.postfix {
+      background-color: transparent;
+      color: $darkGrey
+    }
+
+    &.focus {
+      span.prefix, span.postfix {
+        background-color: transparent;
+        color: $darkGrey;
+      }
+    }
+
+    &.active {
+      span.prefix, span.postfix {
+        background-color: transparent;
+        color: $darkGrey;
+      }
+    }
+  }
+}

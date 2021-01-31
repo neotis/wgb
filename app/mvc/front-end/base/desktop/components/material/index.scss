@@ -1,0 +1,46 @@
+$lightGrey: #F8F8F8;
+$grey: #E2E5EC;
+$darkGrey: #545454;
+
+$primary: #7218D8;
+$primaryLight: #723cff;
+$primaryDark: #7218a0;
+$primaryDarker: #721878;
+
+$basic: #0FABEF;
+$basicLight: #0fe6ff;
+$basicDark: #0a8ad2;
+$basicDarker: #0067b4;
+
+$green: #299781;
+$greenLight: #32b494;
+$greenDark: #009752;
+$greenDarker: #009719;
+
+$orange: #ff8624;
+$orangeLight: #ffb862;
+$orangeDark: #ff7a00;
+$orangeDarker: #ff5d00;
+
+$red: #ff2f95;
+$redLight: #ff70b6;
+$redDark: #ff1587;
+$redDarker: #ff0074;
+
+$error: #ff2f95;
+$errorLight: #ff70b6;
+$errorDark: #ff1587;
+$errorDarker: #ff0074;
+
+@import 'text/index';
+@import 'select/index';
+@import 'checkbox/index';
+@import 'radio/index';
+@import 'tinymce/index';
+@import 'tag/index';
+@import 'range/index';
+@import 'upload/index';
+@import 'map/index';
+@import 'textarea/index';
+@import 'button/index';
+

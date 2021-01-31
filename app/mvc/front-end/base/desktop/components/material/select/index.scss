@@ -1,0 +1,563 @@
+neo-component-material-select {
+  width: calc(100% - 20px);
+  position: relative;
+  display: inline-block;
+  outline: none;
+  margin: 10px;
+  .list {
+    display: none;
+    width: 100%;
+    height: 290px;
+    position: absolute;
+    top: 50px;
+    z-index: 9000;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(69, 65, 78, 0.2);
+    box-shadow: 0px 0px 15px 1px rgba(69, 65, 78, 0.2);
+
+    > .search-holder {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+
+      input {
+        width: 100%;
+        height: 30px;
+        font-family: "IRANSans";
+        box-sizing: border-box;
+        font-size: 11px;
+        border: 1px solid $grey;
+        padding-right: 10px;
+
+        &:focus {
+          border-color: $primary;
+          outline: none;
+        }
+      }
+    }
+
+    ul {
+      width: 100%;
+      height: 230px;
+      margin-top: 10px;
+      overflow-x: hidden;
+      box-sizing: border-box;
+      outline: none;
+
+      > p {
+        font-size: 12px;
+        color: $grey;
+        padding-top: 10px;
+      }
+
+      li {
+        width: 100%;
+        height: 40px;
+        cursor: pointer;
+        font-size: 12px;
+        padding-right: 5px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        outline: none;
+
+        .prefix {
+          display: none;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          font-size: 20px;
+          color: $darkGrey
+        }
+
+        p {
+          width: 100%;
+        }
+
+        .postfix {
+          width: 40px;
+          height: 100%;
+          display: none;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          font-size: 20px;
+          color: $darkGrey
+        }
+
+        &:hover {
+          background-color: $lightGrey;
+        }
+
+        &:focus {
+          background-color: $lightGrey;
+        }
+
+        &.focus {
+          background-color: $lightGrey;
+        }
+
+        &.active {
+          background-color: $grey;
+
+          .postfix {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+
+  .text-input-holder {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    transition: ease-in 150ms;
+    border: 1px solid $grey;
+
+    > span.prefix, span.postfix {
+      background-color: $grey;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      color: $darkGrey;
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+      padding: 0 10px 0 10px;
+
+      &.icon {
+        font-size: 18px;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    > .title {
+      width: calc(100% - 20px);
+      height: 40px;
+      line-height: 40px;
+      font-size: 13px;
+      font-weight: bold;
+      color: $darkGrey;
+      position: absolute;
+      z-index: 2;
+      right: 15px;
+      top: 10px;
+      cursor: text;
+      transition: ease-in 150ms;
+    }
+
+
+    > span.status-icon {
+      width: 40px;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      color: $darkGrey;
+
+      > i {
+        display: none;
+        font-size: 22px;
+
+        &.success {
+          color: $green
+        }
+      }
+
+      &.active {
+        display: flex;
+      }
+    }
+
+    > .inputs {
+      width: 100%;
+      height: inherit;
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      align-content: center;
+
+      > label {
+        width: 100%;
+        height: inherit;
+        font-size: 13px;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        padding: 2px 10px 2px 10px;
+        font-weight: bold;
+        position: absolute;
+        cursor: text;
+        transition: ease-in 150ms;
+      }
+
+      > select {
+        width: 1px;
+        height: 1px;
+        font-size: 0;
+        overflow: hidden;
+        outline: none;
+        border: none;
+      }
+
+      > span {
+        width: 40px;
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        color: $darkGrey
+      }
+    }
+  }
+
+  &.medium {
+    .text-input-holder {
+      > .title {
+        width: calc(100% - 20px);
+        height: 30px;
+        line-height: 30px;
+        font-size: 11px;
+        z-index: 2;
+      }
+
+      width: calc(100% - 10px);
+      height: 40px;
+      margin: 5px;
+
+      > span.status-icon {
+        width: 40px;
+
+        > i {
+          font-size: 18px;
+        }
+      }
+
+      .inputs {
+        label {
+          font-size: 11px;
+        }
+
+        > input {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+
+  &.slim {
+    .text-input-holder {
+      > .title {
+        width: calc(100% - 20px);
+        height: 30px;
+        line-height: 30px;
+        font-size: 11px;
+        z-index: 2;
+      }
+
+      width: calc(100% - 10px);
+      height: 40px;
+      margin: 5px;
+
+      > span.status-icon {
+        width: 40px;
+
+        > i {
+          font-size: 18px;
+        }
+      }
+
+      .inputs {
+        label {
+          display: none;
+          font-size: 11px;
+        }
+
+        > input {
+          height: inherit;
+          font-size: 11px;
+        }
+      }
+    }
+  }
+
+  &.slim {
+    .text-input-holder {
+      height: 40px;
+    }
+  }
+
+  &.bg-grey, &.disabled {
+    .text-input-holder {
+      background-color: $lightGrey;
+    }
+  }
+
+  &.disabled {
+    .text-input-holder {
+      input {
+        cursor: no-drop;
+      }
+    }
+  }
+
+  &.active {
+    .text-input-holder {
+      > .title {
+        height: 20px;
+        top: -2px;
+      }
+
+      .inputs {
+        input {
+          position: absolute;
+          height: 20px;
+          bottom: 5px;
+        }
+      }
+    }
+
+    &.medium {
+      .text-input-holder {
+        > .title {
+          top: 2px;
+        }
+
+        .inputs {
+          label {
+            top: 0;
+          }
+
+          input {
+            bottom: 2px;
+          }
+        }
+      }
+    }
+
+    &.slim {
+      .text-input-holder {
+        .inputs {
+          input {
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &.focus {
+    .text-input-holder {
+      > .title {
+        height: 20px;
+        top: -2px;
+        color: $primary
+      }
+
+      border: 1px solid $primary;
+
+      span.prefix, span.postfix {
+        background-color: $primary;
+        color: white;
+      }
+
+      .inputs {
+        label {
+          top: 2px;
+          color: $primary;
+        }
+
+        input {
+          position: absolute;
+          height: 20px;
+          bottom: 5px;
+        }
+      }
+    }
+
+    &.medium {
+      .text-input-holder {
+        > .title {
+          top: 2px;
+        }
+
+        .inputs {
+          label {
+            top: 0;
+          }
+
+          input {
+            bottom: 2px;
+          }
+        }
+      }
+    }
+
+    &.slim {
+      .text-input-holder {
+        .inputs {
+          input {
+            height: inherit;
+            bottom: 0;
+            font-size: 13px;
+            color: $darkGrey
+          }
+        }
+      }
+    }
+  }
+
+  &.error {
+    .text-input-holder {
+      > .title {
+        height: 20px;
+        top: -2px;
+        color: $error
+      }
+
+      border: 1px solid $error;
+
+      input {
+        position: absolute;
+        height: 20px;
+        bottom: 5px;
+      }
+    }
+  }
+
+  &.circle {
+    .text-input-holder {
+      > .title {
+        width: calc(100% - 25px);
+        right: 25px;
+      }
+
+      border-radius: 25px;
+      overflow: hidden;
+
+      .inputs {
+        label {
+          padding-right: 20px;
+        }
+
+        input {
+          width: calc(100% - 10px);
+          position: absolute;
+          height: 20px;
+          bottom: 5px;
+          right: 10px;
+        }
+      }
+    }
+
+    &.slim {
+      .text-input-holder {
+        .inputs {
+          input {
+            height: inherit;
+            bottom: 0;
+            right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  &.curve {
+    .text-input-holder {
+      border-radius: 5px;
+      overflow: hidden;
+
+      input {
+        width: calc(100% - 10px);
+        position: absolute;
+        height: 20px;
+        bottom: 5px;
+        right: 0;
+      }
+    }
+
+    &.slim {
+      .text-input-holder {
+        .inputs {
+          input {
+            height: inherit;
+            bottom: 0;
+          }
+        }
+      }
+    }
+
+    span.prefix, span.postfix {
+      background-color: $green;
+      color: white;
+    }
+  }
+
+  &.success {
+    .text-input-holder {
+      > .title {
+        height: 20px;
+        top: -2px;
+        color: $green
+      }
+
+      border: 1px solid $green;
+
+      input {
+        position: absolute;
+        height: 20px;
+        bottom: 5px;
+      }
+
+      .status-icon {
+        display: flex;
+
+        i.success {
+          display: block;
+        }
+      }
+
+      span.prefix, span.postfix {
+        background-color: $green;
+        color: white;
+      }
+    }
+  }
+
+  &.shadow {
+    .text-input-holder {
+      -webkit-box-shadow: 0px 3px 20px 0px rgba(113, 106, 202, 0.11);
+      box-shadow: 0px 3px 20px 0px rgba(113, 106, 202, 0.11);
+    }
+  }
+
+  &.prefix-transparent {
+    span.prefix, span.postfix {
+      background-color: transparent;
+      color: $darkGrey
+    }
+
+    &.focus {
+      span.prefix, span.postfix {
+        background-color: transparent;
+        color: $darkGrey;
+      }
+    }
+
+    &.active {
+      span.prefix, span.postfix {
+        background-color: transparent;
+        color: $darkGrey;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+neo-index-index{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  height: 100%;
+  h1,h2,h3,h4,h5,h6{
+    padding: 10px;
+  }
+  .center{
+    h1,h2,h3,h4,h5,h6{
+      padding: 0;
+    }
+    h1{
+      font-size: 100px;
+    }
+  }
+}

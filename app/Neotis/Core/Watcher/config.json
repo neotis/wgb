@@ -1,0 +1,13 @@
+{
+  "watcher_event": [
+    {
+      "name": "watcher",
+      "status": "true",
+      "object": "Neotis\\Core\\Watcher\\Manage",
+      "method": "start",
+      "arguments": [],
+      "comment": "Run neotis file watcher",
+      "position": "end"
+    }
+  ]
+}

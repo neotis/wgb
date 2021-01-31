@@ -1,0 +1,30 @@
+/* Tool Tips */
+.tool-tip {
+  display: inline-block;
+  clear: both;
+  float: left;
+  position: absolute;
+  z-index: 104;
+  top: 200px;
+  background-color: darkblue;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  .holder{
+    width: 100%;
+    position: relative;
+    span {
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: -15px;
+      left: calc(50% - 8px);
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 12px solid darkblue;
+    }
+  }
+}

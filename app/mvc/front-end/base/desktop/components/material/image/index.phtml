@@ -1,0 +1,9 @@
+<div    <?php if(isset($data['value']) and !empty($data['value'])){echo 'style="background-image: url(\''.$data['value'].'\')"';} ?>
+        class="uploader-image"></div>
+<input class="hidden" type="file"
+    <?php if(isset($data['name'])){echo 'name="'.$data['name'].'"';} ?>
+    <?php if(isset($data['path'])){echo 'path="'.$data['path'].'"';} ?>
+    <?php if(isset($data['progress'])){echo 'progress="'.$data['progress'].'"';} ?>
+    <?php if(isset($data['response'])){echo 'response="'.$data['response'].'"';} ?> 
+    <?php if(isset($data['id'])){echo 'id="up_'.$data['id'].'"';} ?>>
+<input <?php if(isset($data['value']) and !empty($data['value'])){echo 'value="'.$data['value'].'"';} ?> type="hidden" <?php if(isset($data['name'])){echo 'name="'.$data['name'].'"';} ?> <?php if(isset($data['id'])){echo 'id="'.$data['id'].'"';} ?>>

@@ -1,0 +1,13 @@
+<div id="memory" class="row content">
+    <div style="width: 100%; display: flex; justify-content: center; font-size: 18px;">
+        <p>Memory: <span><strong><?php
+                    function convert($size)
+                    {
+                        $unit=array('b','kb','mb','gb','tb','pb');
+                        return @round($size/pow(1024,($i=floor(log($size,1024)))),2).' '.$unit[$i];
+                    }
+
+                    echo convert(memory_get_usage(true)); // 123 kb
+                    ?></strong></span></p>
+    </div>
+</div>

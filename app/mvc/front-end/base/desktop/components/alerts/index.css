@@ -1,0 +1,79 @@
+neo-component-alerts {
+  width: 25vw !important;
+  position: fixed;
+  z-index: 10100;
+  font-size: 14px;
+  direction: rtl; }
+  neo-component-alerts .alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem; }
+    neo-component-alerts .alert h1, neo-component-alerts .alert h2, neo-component-alerts .alert h3, neo-component-alerts .alert h4, neo-component-alerts .alert h5, neo-component-alerts .alert h6 {
+      margin-bottom: .5rem;
+      font-family: inherit;
+      font-weight: 500;
+      line-height: 1.2;
+      color: inherit; }
+    neo-component-alerts .alert p {
+      margin-top: 0;
+      margin-bottom: 1rem; }
+    neo-component-alerts .alert hr {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      border: 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.1); }
+    neo-component-alerts .alert .close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: .75rem 1.25rem;
+      color: inherit;
+      cursor: pointer;
+      background-color: transparent;
+      border: 0;
+      -webkit-appearance: none;
+      float: right;
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 1;
+      text-shadow: 0 1px 0 #fff;
+      opacity: .5; }
+    neo-component-alerts .alert.alert-success {
+      color: #155724;
+      background-color: #d4edda;
+      border-color: #c3e6cb; }
+    neo-component-alerts .alert.alert-primary {
+      color: #004085;
+      background-color: #cce5ff;
+      border-color: #b8daff; }
+    neo-component-alerts .alert.alert-secondary {
+      color: #383d41;
+      background-color: #e2e3e5;
+      border-color: #d6d8db; }
+    neo-component-alerts .alert.alert-danger {
+      color: #721c24;
+      background-color: #f8d7da;
+      border-color: #f5c6cb; }
+    neo-component-alerts .alert.alert-warning {
+      color: #856404;
+      background-color: #fff3cd;
+      border-color: #ffeeba; }
+    neo-component-alerts .alert.alert-info {
+      color: #0c5460;
+      background-color: #d1ecf1;
+      border-color: #bee5eb; }
+  neo-component-alerts.right {
+    top: 0;
+    left: 0;
+    text-align: right;
+    left: 0; }
+    neo-component-alerts.right .alert {
+      padding: .75rem 1.25rem .75rem 2.5rem; }
+    neo-component-alerts.right .close {
+      top: 0;
+      left: 0;
+      right: auto; }
+
+/*# sourceMappingURL=index.css.map */

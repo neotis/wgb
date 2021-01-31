@@ -1,0 +1,11 @@
+{
+  "event": {
+    "name": "router",
+    "status": "true",
+    "object": "Neotis\\Core\\Router\\Manager",
+    "method": "run",
+    "arguments": [],
+    "comment": "Define router information",
+    "position": "after::settings"
+  }
+}

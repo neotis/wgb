@@ -1,0 +1,6 @@
+<div class="textarea-holder">
+    <textarea
+        name="<?php if(isset($data['name']) and !empty($data['name'])){echo $data['name'];} ?>"
+        id="<?php if(isset($data['id']) and !empty($data['id'])){echo $data['id'];} ?>" cols="30" rows="10"
+        placeholder="<?php if(isset($data['placeholder']) and !empty($data['placeholder'])){echo $data['placeholder'];} ?>"><?php if(isset($data['value']) and !empty($data['value'])){echo $data['value'];} ?></textarea>
+</div>

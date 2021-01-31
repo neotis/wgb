@@ -1,0 +1,31 @@
+{
+  "event": [
+    {
+      "name": "controller",
+      "status": "true",
+      "object": "Neotis\\Core\\Mvc\\Manager",
+      "method": "controller",
+      "arguments": [],
+      "comment": "Define and run controller",
+      "position": "after::session"
+    },
+    {
+      "name": "view",
+      "status": "true",
+      "object": "Neotis\\Core\\Mvc\\Manager",
+      "method": "view",
+      "arguments": [],
+      "comment": "Define and run view manager",
+      "position": "after::controller"
+    },
+    {
+      "name": "screenResult",
+      "status": "true",
+      "object": "Neotis\\Core\\Mvc\\View",
+      "method": "display",
+      "arguments": [],
+      "comment": "Display result to user with browser",
+      "position": "end"
+    }
+  ]
+}

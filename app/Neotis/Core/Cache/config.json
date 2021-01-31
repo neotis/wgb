@@ -1,0 +1,13 @@
+{
+  "event": [
+    {
+      "name": "viewCache",
+      "status": "true",
+      "object": "Neotis\\Core\\Cache\\View",
+      "method": "cacheChecker",
+      "arguments": [],
+      "comment": "Define cache system for template factory",
+      "position": "after::pageAccess"
+    }
+  ]
+}

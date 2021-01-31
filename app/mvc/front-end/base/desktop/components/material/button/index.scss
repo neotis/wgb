@@ -1,0 +1,211 @@
+neo-component-material-button {
+  display: inline-block;
+  position: relative;
+
+  button {
+    padding: 10px 20px 10px 20px;
+    font-size: 12px;
+    background-color: white;
+    border: 1px solid $grey;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'IRANSans';
+    transition: ease-in 100ms;
+    color: $darkGrey;
+    outline: none;
+    box-sizing: border-box;
+    &:hover {
+      background-color: $lightGrey;
+    }
+  }
+
+  &.tiny {
+    button {
+      font-size: 8px;
+      padding: 3px 5px 3px 5px;
+    }
+  }
+
+  &.small {
+    button {
+      font-size: 10px;
+      padding: 6px 10px 6px 10px;
+    }
+  }
+
+  &.large {
+    button {
+      font-size: 14px;
+      padding: 15px 30px 15px 30px;
+    }
+  }
+
+  &.x-large {
+    button {
+      font-size: 16px;
+      padding: 20px 45px 20px 45px;
+    }
+  }
+
+  &.primary {
+    button {
+      background-color: $primary;
+      color: white;
+      border: 1px solid $primary;
+
+      &:hover {
+        background-color: $primaryDark;
+        border: 1px solid $primaryDarker;
+      }
+    }
+
+    &.outline {
+      button {
+        background-color: transparent;
+        color: $primary;
+        border: 1px solid $primary;
+
+        &:hover {
+          background-color: $primary;
+          color: white;
+          border: 1px solid $primaryDarker;
+        }
+      }
+    }
+  }
+
+  &.basic {
+    button {
+      background-color: $basic;
+      color: white;
+      border: 1px solid $basic;
+
+      &:hover {
+        background-color: $basicDark;
+        border: 1px solid $basicDarker;
+      }
+    }
+
+    &.outline {
+      button {
+        background-color: transparent;
+        color: $basic;
+        border: 1px solid $basic;
+
+        &:hover {
+          background-color: $basic;
+          color: white;
+          border: 1px solid $basicDarker;
+        }
+      }
+    }
+  }
+
+  &.green {
+    button {
+      background-color: $green;
+      color: white;
+      border: 1px solid $green;
+
+      &:hover {
+        background-color: $greenDark;
+        border: 1px solid $greenDarker;
+      }
+    }
+
+    &.outline {
+      button {
+        background-color: transparent;
+        color: $green;
+        border: 1px solid $green;
+
+        &:hover {
+          background-color: $green;
+          color: white;
+          border: 1px solid $basicDarker;
+        }
+      }
+    }
+  }
+
+  &.orange {
+    button {
+      background-color: $orange;
+      color: white;
+      border: 1px solid $orange;
+
+      &:hover {
+        background-color: $orangeDark;
+        border: 1px solid $orangeDarker;
+      }
+    }
+
+    &.outline {
+      button {
+        background-color: transparent;
+        color: $orange;
+        border: 1px solid $orange;
+
+        &:hover {
+          background-color: $orange;
+          color: white;
+          border: 1px solid $orangeDarker;
+        }
+      }
+    }
+  }
+
+  &.red {
+    button {
+      background-color: $red;
+      color: white;
+      border: 1px solid $red;
+
+      &:hover {
+        background-color: $redDark;
+        border: 1px solid $redDarker;
+      }
+    }
+
+    &.outline {
+      button {
+        background-color: transparent;
+        color: $darkGrey;
+        border: 1px solid $red;
+
+        &:hover {
+          background-color: $red;
+          color: white;
+          border: 1px solid $redDarker;
+        }
+      }
+    }
+  }
+
+
+  &.curve {
+    button {
+      border-radius: 5px;
+    }
+  }
+
+  &.circle {
+    button {
+      border-radius: 25px;
+    }
+  }
+
+  &.margin {
+    margin: 5px;
+  }
+
+  &.big-margin {
+    margin: 10px;
+  }
+
+  &.border {
+    button {
+      border-width: 2px !important;
+    }
+  }
+}

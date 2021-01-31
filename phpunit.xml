@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<phpunit
+        bootstrap="unitTest.php"
+        colors="true"
+        verbose="true"
+        stopOnFailure="true">
+    <testsuites>
+        <testsuite name="Api classes">
+            <directory>app/Neotis/Tests/Api</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

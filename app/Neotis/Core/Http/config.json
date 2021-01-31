@@ -1,0 +1,13 @@
+{
+  "event": [
+    {
+      "name": "header",
+      "status": "true",
+      "object": "Neotis\\Core\\Http\\Manager",
+      "method": "header",
+      "arguments": [],
+      "comment": "Define basic headers methods",
+      "position": "before::router"
+    }
+  ]
+}

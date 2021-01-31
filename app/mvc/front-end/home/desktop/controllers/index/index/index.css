@@ -1,0 +1,15 @@
+neo-index-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  height: 100%; }
+  neo-index-index h1, neo-index-index h2, neo-index-index h3, neo-index-index h4, neo-index-index h5, neo-index-index h6 {
+    padding: 10px; }
+  neo-index-index .center h1, neo-index-index .center h2, neo-index-index .center h3, neo-index-index .center h4, neo-index-index .center h5, neo-index-index .center h6 {
+    padding: 0; }
+  neo-index-index .center h1 {
+    font-size: 100px; }
+
+/*# sourceMappingURL=index.css.map */

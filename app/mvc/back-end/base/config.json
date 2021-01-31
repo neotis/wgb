@@ -1,0 +1,21 @@
+{
+  "name": "Base package",
+  "language": "english",
+  "parent": "base",
+  "status": "deactive",
+  "defaults": {
+    "controller": "index",
+    "action": "index"
+  },
+  "timeZone": "Asia/Tehran",
+  "remote_access": "false",
+  "programmer": "",
+  "extends_controller": "ControllerBase",
+  "classification": "",
+  "author": "",
+  "category": "",
+  "coverage": "",
+  "distribution": "",
+  "revisit_after": "",
+  "twig": "false"
+}

@@ -1,0 +1,20 @@
+{
+  "event": [{
+    "name": "session",
+    "status": "true",
+    "object": "Neotis\\Core\\Session\\Manager",
+    "method": "run",
+    "arguments": [],
+    "comment": "Define session class",
+    "position": "after::settings"
+  }],
+  "test_event": [{
+    "name": "session",
+    "status": "true",
+    "object": "Neotis\\Core\\Session\\Manager",
+    "method": "run",
+    "arguments": [],
+    "comment": "Define session class",
+    "position": "after::settings"
+  }]
+}

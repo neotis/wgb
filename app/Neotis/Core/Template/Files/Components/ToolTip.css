@@ -1,0 +1,12 @@
+/* Tool Tips */
+.tool-tip {
+  position: absolute;
+  bottom: 10px;
+  background-color: darkblue;
+  border-radius: 5px;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  padding: 5px; }
+
+/*# sourceMappingURL=ToolTip.css.map */
